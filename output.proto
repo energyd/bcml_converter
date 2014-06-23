@@ -1,0 +1,65 @@
+message UnspecifiedType
+{
+	required string baseObjectType = 1;
+	required bytes object = 2;
+}
+
+message ShipInfoType
+{
+	required int64 ShipVia = 1;
+	required double Freight = 2;
+	required string ShipName = 3;
+	required string ShipAddress = 4;
+	required string ShipCity = 5;
+	required string ShipRegion = 6;
+	required string ShipPostalCode = 7;
+	required string ShipCountry = 8;
+	optional int64 ShippedDate = 9;
+}
+
+message OrderType
+{
+	required string CustomerID = 1;
+	required string EmployeeID = 2;
+	required int64 OrderDate = 3;
+	required int64 RequiredDate = 4;
+	required ShipInfoType ShipInfo = 5;
+}
+
+message OrdersType
+{
+	repeated OrderType Order = 1;
+}
+
+message AddressType
+{
+	required string Address = 1;
+	required string City = 2;
+	required string Region = 3;
+	required string PostalCode = 4;
+	required string Country = 5;
+	optional string CustomerID = 6;
+}
+
+message CustomerType
+{
+	required string CompanyName = 1;
+	required string ContactName = 2;
+	required string ContactTitle = 3;
+	required string Phone = 4;
+	optional string Fax = 5;
+	required AddressType FullAddress = 6;
+	optional string CustomerID = 7;
+}
+
+message CustomersType
+{
+	repeated CustomerType Customer = 1;
+}
+
+message RootType
+{
+	required CustomersType Customers = 1;
+	required OrdersType Orders = 2;
+}
+
