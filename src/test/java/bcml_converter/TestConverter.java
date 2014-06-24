@@ -17,14 +17,14 @@ import com.google.protobuf.Message;
  */
 public class TestConverter {
 
-	@Test
-	public void test() {
-		BcmlToProtobufConverter testConverter = new BcmlToProtobufConverter();
-		testConverter.convert("sample.xsd", "output.proto", false);
-		Message.Builder builder = output.newBuilder();
-		String xmlFormat = _load xml document from a source_;
-		XmlFormat.merge(xmlFormat, builder);
-		assertTrue(true);
-	}
+//	@Test
+//	public void test() {
+//		BcmlToProtobufConverter testConverter = new BcmlToProtobufConverter();
+//		testConverter.convert("sample.xsd", "output.proto", false);
+//		Message.Builder builder = output.newBuilder();
+//		String xmlFormat = _load xml document from a source_;
+//		XmlFormat.merge(xmlFormat, builder);
+//		assertTrue(true);
+//	}
 
 }

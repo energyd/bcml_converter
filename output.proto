@@ -1,10 +1,6 @@
-message UnspecifiedType
-{
-	required string baseObjectType = 1;
-	required bytes object = 2;
-}
+option java_package = "bcml_converter";
 
-message ShipInfoType
+message ShipInfo
 {
 	required int64 ShipVia = 1;
 	required double Freight = 2;
@@ -17,21 +13,21 @@ message ShipInfoType
 	optional int64 ShippedDate = 9;
 }
 
-message OrderType
+message Order
 {
 	required string CustomerID = 1;
 	required string EmployeeID = 2;
 	required int64 OrderDate = 3;
 	required int64 RequiredDate = 4;
-	required ShipInfoType ShipInfo = 5;
+	required ShipInfo ShipInfo = 5;
 }
 
-message OrdersType
+message Orders
 {
-	repeated OrderType Order = 1;
+	repeated Order Order = 1;
 }
 
-message AddressType
+message Address
 {
 	required string Address = 1;
 	required string City = 2;
@@ -41,25 +37,25 @@ message AddressType
 	optional string CustomerID = 6;
 }
 
-message CustomerType
+message Customer
 {
 	required string CompanyName = 1;
 	required string ContactName = 2;
 	required string ContactTitle = 3;
 	required string Phone = 4;
 	optional string Fax = 5;
-	required AddressType FullAddress = 6;
+	required Address FullAddress = 6;
 	optional string CustomerID = 7;
 }
 
-message CustomersType
+message Customers
 {
-	repeated CustomerType Customer = 1;
+	repeated Customer Customer = 1;
 }
 
-message RootType
+message Root
 {
-	required CustomersType Customers = 1;
-	required OrdersType Orders = 2;
+	required Customers Customers = 1;
+	required Orders Orders = 2;
 }
 
