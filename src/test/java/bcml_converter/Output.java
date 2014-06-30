@@ -8,148 +8,53 @@ public final class Output {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface ShipInfoOrBuilder
+  public interface UnspecifiedTypeOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int64 ShipVia = 1;
+    // required string baseObjectType = 1;
     /**
-     * <code>required int64 ShipVia = 1;</code>
+     * <code>required string baseObjectType = 1;</code>
      */
-    boolean hasShipVia();
+    boolean hasBaseObjectType();
     /**
-     * <code>required int64 ShipVia = 1;</code>
+     * <code>required string baseObjectType = 1;</code>
      */
-    long getShipVia();
-
-    // required double Freight = 2;
+    java.lang.String getBaseObjectType();
     /**
-     * <code>required double Freight = 2;</code>
-     */
-    boolean hasFreight();
-    /**
-     * <code>required double Freight = 2;</code>
-     */
-    double getFreight();
-
-    // required string ShipName = 3;
-    /**
-     * <code>required string ShipName = 3;</code>
-     */
-    boolean hasShipName();
-    /**
-     * <code>required string ShipName = 3;</code>
-     */
-    java.lang.String getShipName();
-    /**
-     * <code>required string ShipName = 3;</code>
+     * <code>required string baseObjectType = 1;</code>
      */
     com.google.protobuf.ByteString
-        getShipNameBytes();
+        getBaseObjectTypeBytes();
 
-    // required string ShipAddress = 4;
+    // required bytes object = 2;
     /**
-     * <code>required string ShipAddress = 4;</code>
+     * <code>required bytes object = 2;</code>
      */
-    boolean hasShipAddress();
+    boolean hasObject();
     /**
-     * <code>required string ShipAddress = 4;</code>
+     * <code>required bytes object = 2;</code>
      */
-    java.lang.String getShipAddress();
-    /**
-     * <code>required string ShipAddress = 4;</code>
-     */
-    com.google.protobuf.ByteString
-        getShipAddressBytes();
-
-    // required string ShipCity = 5;
-    /**
-     * <code>required string ShipCity = 5;</code>
-     */
-    boolean hasShipCity();
-    /**
-     * <code>required string ShipCity = 5;</code>
-     */
-    java.lang.String getShipCity();
-    /**
-     * <code>required string ShipCity = 5;</code>
-     */
-    com.google.protobuf.ByteString
-        getShipCityBytes();
-
-    // required string ShipRegion = 6;
-    /**
-     * <code>required string ShipRegion = 6;</code>
-     */
-    boolean hasShipRegion();
-    /**
-     * <code>required string ShipRegion = 6;</code>
-     */
-    java.lang.String getShipRegion();
-    /**
-     * <code>required string ShipRegion = 6;</code>
-     */
-    com.google.protobuf.ByteString
-        getShipRegionBytes();
-
-    // required string ShipPostalCode = 7;
-    /**
-     * <code>required string ShipPostalCode = 7;</code>
-     */
-    boolean hasShipPostalCode();
-    /**
-     * <code>required string ShipPostalCode = 7;</code>
-     */
-    java.lang.String getShipPostalCode();
-    /**
-     * <code>required string ShipPostalCode = 7;</code>
-     */
-    com.google.protobuf.ByteString
-        getShipPostalCodeBytes();
-
-    // required string ShipCountry = 8;
-    /**
-     * <code>required string ShipCountry = 8;</code>
-     */
-    boolean hasShipCountry();
-    /**
-     * <code>required string ShipCountry = 8;</code>
-     */
-    java.lang.String getShipCountry();
-    /**
-     * <code>required string ShipCountry = 8;</code>
-     */
-    com.google.protobuf.ByteString
-        getShipCountryBytes();
-
-    // optional int64 ShippedDate = 9;
-    /**
-     * <code>optional int64 ShippedDate = 9;</code>
-     */
-    boolean hasShippedDate();
-    /**
-     * <code>optional int64 ShippedDate = 9;</code>
-     */
-    long getShippedDate();
+    com.google.protobuf.ByteString getObject();
   }
   /**
-   * Protobuf type {@code ShipInfo}
+   * Protobuf type {@code bcml_converter.UnspecifiedType}
    */
-  public static final class ShipInfo extends
+  public static final class UnspecifiedType extends
       com.google.protobuf.GeneratedMessage
-      implements ShipInfoOrBuilder {
-    // Use ShipInfo.newBuilder() to construct.
-    private ShipInfo(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements UnspecifiedTypeOrBuilder {
+    // Use UnspecifiedType.newBuilder() to construct.
+    private UnspecifiedType(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private ShipInfo(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private UnspecifiedType(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final ShipInfo defaultInstance;
-    public static ShipInfo getDefaultInstance() {
+    private static final UnspecifiedType defaultInstance;
+    public static UnspecifiedType getDefaultInstance() {
       return defaultInstance;
     }
 
-    public ShipInfo getDefaultInstanceForType() {
+    public UnspecifiedType getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -159,1509 +64,7 @@ public final class Output {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private ShipInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              shipVia_ = input.readInt64();
-              break;
-            }
-            case 17: {
-              bitField0_ |= 0x00000002;
-              freight_ = input.readDouble();
-              break;
-            }
-            case 26: {
-              bitField0_ |= 0x00000004;
-              shipName_ = input.readBytes();
-              break;
-            }
-            case 34: {
-              bitField0_ |= 0x00000008;
-              shipAddress_ = input.readBytes();
-              break;
-            }
-            case 42: {
-              bitField0_ |= 0x00000010;
-              shipCity_ = input.readBytes();
-              break;
-            }
-            case 50: {
-              bitField0_ |= 0x00000020;
-              shipRegion_ = input.readBytes();
-              break;
-            }
-            case 58: {
-              bitField0_ |= 0x00000040;
-              shipPostalCode_ = input.readBytes();
-              break;
-            }
-            case 66: {
-              bitField0_ |= 0x00000080;
-              shipCountry_ = input.readBytes();
-              break;
-            }
-            case 72: {
-              bitField0_ |= 0x00000100;
-              shippedDate_ = input.readInt64();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return bcml_converter.Output.internal_static_ShipInfo_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return bcml_converter.Output.internal_static_ShipInfo_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              bcml_converter.Output.ShipInfo.class, bcml_converter.Output.ShipInfo.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<ShipInfo> PARSER =
-        new com.google.protobuf.AbstractParser<ShipInfo>() {
-      public ShipInfo parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ShipInfo(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ShipInfo> getParserForType() {
-      return PARSER;
-    }
-
-    private int bitField0_;
-    // required int64 ShipVia = 1;
-    public static final int SHIPVIA_FIELD_NUMBER = 1;
-    private long shipVia_;
-    /**
-     * <code>required int64 ShipVia = 1;</code>
-     */
-    public boolean hasShipVia() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required int64 ShipVia = 1;</code>
-     */
-    public long getShipVia() {
-      return shipVia_;
-    }
-
-    // required double Freight = 2;
-    public static final int FREIGHT_FIELD_NUMBER = 2;
-    private double freight_;
-    /**
-     * <code>required double Freight = 2;</code>
-     */
-    public boolean hasFreight() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>required double Freight = 2;</code>
-     */
-    public double getFreight() {
-      return freight_;
-    }
-
-    // required string ShipName = 3;
-    public static final int SHIPNAME_FIELD_NUMBER = 3;
-    private java.lang.Object shipName_;
-    /**
-     * <code>required string ShipName = 3;</code>
-     */
-    public boolean hasShipName() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>required string ShipName = 3;</code>
-     */
-    public java.lang.String getShipName() {
-      java.lang.Object ref = shipName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          shipName_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string ShipName = 3;</code>
-     */
-    public com.google.protobuf.ByteString
-        getShipNameBytes() {
-      java.lang.Object ref = shipName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        shipName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // required string ShipAddress = 4;
-    public static final int SHIPADDRESS_FIELD_NUMBER = 4;
-    private java.lang.Object shipAddress_;
-    /**
-     * <code>required string ShipAddress = 4;</code>
-     */
-    public boolean hasShipAddress() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>required string ShipAddress = 4;</code>
-     */
-    public java.lang.String getShipAddress() {
-      java.lang.Object ref = shipAddress_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          shipAddress_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string ShipAddress = 4;</code>
-     */
-    public com.google.protobuf.ByteString
-        getShipAddressBytes() {
-      java.lang.Object ref = shipAddress_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        shipAddress_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // required string ShipCity = 5;
-    public static final int SHIPCITY_FIELD_NUMBER = 5;
-    private java.lang.Object shipCity_;
-    /**
-     * <code>required string ShipCity = 5;</code>
-     */
-    public boolean hasShipCity() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>required string ShipCity = 5;</code>
-     */
-    public java.lang.String getShipCity() {
-      java.lang.Object ref = shipCity_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          shipCity_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string ShipCity = 5;</code>
-     */
-    public com.google.protobuf.ByteString
-        getShipCityBytes() {
-      java.lang.Object ref = shipCity_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        shipCity_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // required string ShipRegion = 6;
-    public static final int SHIPREGION_FIELD_NUMBER = 6;
-    private java.lang.Object shipRegion_;
-    /**
-     * <code>required string ShipRegion = 6;</code>
-     */
-    public boolean hasShipRegion() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    /**
-     * <code>required string ShipRegion = 6;</code>
-     */
-    public java.lang.String getShipRegion() {
-      java.lang.Object ref = shipRegion_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          shipRegion_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string ShipRegion = 6;</code>
-     */
-    public com.google.protobuf.ByteString
-        getShipRegionBytes() {
-      java.lang.Object ref = shipRegion_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        shipRegion_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // required string ShipPostalCode = 7;
-    public static final int SHIPPOSTALCODE_FIELD_NUMBER = 7;
-    private java.lang.Object shipPostalCode_;
-    /**
-     * <code>required string ShipPostalCode = 7;</code>
-     */
-    public boolean hasShipPostalCode() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
-    }
-    /**
-     * <code>required string ShipPostalCode = 7;</code>
-     */
-    public java.lang.String getShipPostalCode() {
-      java.lang.Object ref = shipPostalCode_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          shipPostalCode_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string ShipPostalCode = 7;</code>
-     */
-    public com.google.protobuf.ByteString
-        getShipPostalCodeBytes() {
-      java.lang.Object ref = shipPostalCode_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        shipPostalCode_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // required string ShipCountry = 8;
-    public static final int SHIPCOUNTRY_FIELD_NUMBER = 8;
-    private java.lang.Object shipCountry_;
-    /**
-     * <code>required string ShipCountry = 8;</code>
-     */
-    public boolean hasShipCountry() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
-    }
-    /**
-     * <code>required string ShipCountry = 8;</code>
-     */
-    public java.lang.String getShipCountry() {
-      java.lang.Object ref = shipCountry_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          shipCountry_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string ShipCountry = 8;</code>
-     */
-    public com.google.protobuf.ByteString
-        getShipCountryBytes() {
-      java.lang.Object ref = shipCountry_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        shipCountry_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // optional int64 ShippedDate = 9;
-    public static final int SHIPPEDDATE_FIELD_NUMBER = 9;
-    private long shippedDate_;
-    /**
-     * <code>optional int64 ShippedDate = 9;</code>
-     */
-    public boolean hasShippedDate() {
-      return ((bitField0_ & 0x00000100) == 0x00000100);
-    }
-    /**
-     * <code>optional int64 ShippedDate = 9;</code>
-     */
-    public long getShippedDate() {
-      return shippedDate_;
-    }
-
-    private void initFields() {
-      shipVia_ = 0L;
-      freight_ = 0D;
-      shipName_ = "";
-      shipAddress_ = "";
-      shipCity_ = "";
-      shipRegion_ = "";
-      shipPostalCode_ = "";
-      shipCountry_ = "";
-      shippedDate_ = 0L;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      if (!hasShipVia()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasFreight()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasShipName()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasShipAddress()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasShipCity()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasShipRegion()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasShipPostalCode()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasShipCountry()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt64(1, shipVia_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeDouble(2, freight_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getShipNameBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeBytes(4, getShipAddressBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeBytes(5, getShipCityBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeBytes(6, getShipRegionBytes());
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeBytes(7, getShipPostalCodeBytes());
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeBytes(8, getShipCountryBytes());
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeInt64(9, shippedDate_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, shipVia_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeDoubleSize(2, freight_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getShipNameBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(4, getShipAddressBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(5, getShipCityBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(6, getShipRegionBytes());
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(7, getShipPostalCodeBytes());
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(8, getShipCountryBytes());
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(9, shippedDate_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static bcml_converter.Output.ShipInfo parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static bcml_converter.Output.ShipInfo parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static bcml_converter.Output.ShipInfo parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static bcml_converter.Output.ShipInfo parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static bcml_converter.Output.ShipInfo parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static bcml_converter.Output.ShipInfo parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static bcml_converter.Output.ShipInfo parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static bcml_converter.Output.ShipInfo parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static bcml_converter.Output.ShipInfo parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static bcml_converter.Output.ShipInfo parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(bcml_converter.Output.ShipInfo prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code ShipInfo}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements bcml_converter.Output.ShipInfoOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return bcml_converter.Output.internal_static_ShipInfo_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return bcml_converter.Output.internal_static_ShipInfo_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                bcml_converter.Output.ShipInfo.class, bcml_converter.Output.ShipInfo.Builder.class);
-      }
-
-      // Construct using bcml_converter.Output.ShipInfo.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-
-      public Builder clear() {
-        super.clear();
-        shipVia_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        freight_ = 0D;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        shipName_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
-        shipAddress_ = "";
-        bitField0_ = (bitField0_ & ~0x00000008);
-        shipCity_ = "";
-        bitField0_ = (bitField0_ & ~0x00000010);
-        shipRegion_ = "";
-        bitField0_ = (bitField0_ & ~0x00000020);
-        shipPostalCode_ = "";
-        bitField0_ = (bitField0_ & ~0x00000040);
-        shipCountry_ = "";
-        bitField0_ = (bitField0_ & ~0x00000080);
-        shippedDate_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000100);
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return bcml_converter.Output.internal_static_ShipInfo_descriptor;
-      }
-
-      public bcml_converter.Output.ShipInfo getDefaultInstanceForType() {
-        return bcml_converter.Output.ShipInfo.getDefaultInstance();
-      }
-
-      public bcml_converter.Output.ShipInfo build() {
-        bcml_converter.Output.ShipInfo result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public bcml_converter.Output.ShipInfo buildPartial() {
-        bcml_converter.Output.ShipInfo result = new bcml_converter.Output.ShipInfo(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.shipVia_ = shipVia_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.freight_ = freight_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.shipName_ = shipName_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.shipAddress_ = shipAddress_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.shipCity_ = shipCity_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.shipRegion_ = shipRegion_;
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000040;
-        }
-        result.shipPostalCode_ = shipPostalCode_;
-        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
-          to_bitField0_ |= 0x00000080;
-        }
-        result.shipCountry_ = shipCountry_;
-        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
-          to_bitField0_ |= 0x00000100;
-        }
-        result.shippedDate_ = shippedDate_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof bcml_converter.Output.ShipInfo) {
-          return mergeFrom((bcml_converter.Output.ShipInfo)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(bcml_converter.Output.ShipInfo other) {
-        if (other == bcml_converter.Output.ShipInfo.getDefaultInstance()) return this;
-        if (other.hasShipVia()) {
-          setShipVia(other.getShipVia());
-        }
-        if (other.hasFreight()) {
-          setFreight(other.getFreight());
-        }
-        if (other.hasShipName()) {
-          bitField0_ |= 0x00000004;
-          shipName_ = other.shipName_;
-          onChanged();
-        }
-        if (other.hasShipAddress()) {
-          bitField0_ |= 0x00000008;
-          shipAddress_ = other.shipAddress_;
-          onChanged();
-        }
-        if (other.hasShipCity()) {
-          bitField0_ |= 0x00000010;
-          shipCity_ = other.shipCity_;
-          onChanged();
-        }
-        if (other.hasShipRegion()) {
-          bitField0_ |= 0x00000020;
-          shipRegion_ = other.shipRegion_;
-          onChanged();
-        }
-        if (other.hasShipPostalCode()) {
-          bitField0_ |= 0x00000040;
-          shipPostalCode_ = other.shipPostalCode_;
-          onChanged();
-        }
-        if (other.hasShipCountry()) {
-          bitField0_ |= 0x00000080;
-          shipCountry_ = other.shipCountry_;
-          onChanged();
-        }
-        if (other.hasShippedDate()) {
-          setShippedDate(other.getShippedDate());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        if (!hasShipVia()) {
-          
-          return false;
-        }
-        if (!hasFreight()) {
-          
-          return false;
-        }
-        if (!hasShipName()) {
-          
-          return false;
-        }
-        if (!hasShipAddress()) {
-          
-          return false;
-        }
-        if (!hasShipCity()) {
-          
-          return false;
-        }
-        if (!hasShipRegion()) {
-          
-          return false;
-        }
-        if (!hasShipPostalCode()) {
-          
-          return false;
-        }
-        if (!hasShipCountry()) {
-          
-          return false;
-        }
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        bcml_converter.Output.ShipInfo parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (bcml_converter.Output.ShipInfo) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // required int64 ShipVia = 1;
-      private long shipVia_ ;
-      /**
-       * <code>required int64 ShipVia = 1;</code>
-       */
-      public boolean hasShipVia() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required int64 ShipVia = 1;</code>
-       */
-      public long getShipVia() {
-        return shipVia_;
-      }
-      /**
-       * <code>required int64 ShipVia = 1;</code>
-       */
-      public Builder setShipVia(long value) {
-        bitField0_ |= 0x00000001;
-        shipVia_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required int64 ShipVia = 1;</code>
-       */
-      public Builder clearShipVia() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        shipVia_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      // required double Freight = 2;
-      private double freight_ ;
-      /**
-       * <code>required double Freight = 2;</code>
-       */
-      public boolean hasFreight() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required double Freight = 2;</code>
-       */
-      public double getFreight() {
-        return freight_;
-      }
-      /**
-       * <code>required double Freight = 2;</code>
-       */
-      public Builder setFreight(double value) {
-        bitField0_ |= 0x00000002;
-        freight_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required double Freight = 2;</code>
-       */
-      public Builder clearFreight() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        freight_ = 0D;
-        onChanged();
-        return this;
-      }
-
-      // required string ShipName = 3;
-      private java.lang.Object shipName_ = "";
-      /**
-       * <code>required string ShipName = 3;</code>
-       */
-      public boolean hasShipName() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>required string ShipName = 3;</code>
-       */
-      public java.lang.String getShipName() {
-        java.lang.Object ref = shipName_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          shipName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string ShipName = 3;</code>
-       */
-      public com.google.protobuf.ByteString
-          getShipNameBytes() {
-        java.lang.Object ref = shipName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          shipName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string ShipName = 3;</code>
-       */
-      public Builder setShipName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        shipName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipName = 3;</code>
-       */
-      public Builder clearShipName() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        shipName_ = getDefaultInstance().getShipName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipName = 3;</code>
-       */
-      public Builder setShipNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        shipName_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required string ShipAddress = 4;
-      private java.lang.Object shipAddress_ = "";
-      /**
-       * <code>required string ShipAddress = 4;</code>
-       */
-      public boolean hasShipAddress() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>required string ShipAddress = 4;</code>
-       */
-      public java.lang.String getShipAddress() {
-        java.lang.Object ref = shipAddress_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          shipAddress_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string ShipAddress = 4;</code>
-       */
-      public com.google.protobuf.ByteString
-          getShipAddressBytes() {
-        java.lang.Object ref = shipAddress_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          shipAddress_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string ShipAddress = 4;</code>
-       */
-      public Builder setShipAddress(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        shipAddress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipAddress = 4;</code>
-       */
-      public Builder clearShipAddress() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        shipAddress_ = getDefaultInstance().getShipAddress();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipAddress = 4;</code>
-       */
-      public Builder setShipAddressBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        shipAddress_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required string ShipCity = 5;
-      private java.lang.Object shipCity_ = "";
-      /**
-       * <code>required string ShipCity = 5;</code>
-       */
-      public boolean hasShipCity() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>required string ShipCity = 5;</code>
-       */
-      public java.lang.String getShipCity() {
-        java.lang.Object ref = shipCity_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          shipCity_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string ShipCity = 5;</code>
-       */
-      public com.google.protobuf.ByteString
-          getShipCityBytes() {
-        java.lang.Object ref = shipCity_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          shipCity_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string ShipCity = 5;</code>
-       */
-      public Builder setShipCity(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-        shipCity_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipCity = 5;</code>
-       */
-      public Builder clearShipCity() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        shipCity_ = getDefaultInstance().getShipCity();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipCity = 5;</code>
-       */
-      public Builder setShipCityBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-        shipCity_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required string ShipRegion = 6;
-      private java.lang.Object shipRegion_ = "";
-      /**
-       * <code>required string ShipRegion = 6;</code>
-       */
-      public boolean hasShipRegion() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      /**
-       * <code>required string ShipRegion = 6;</code>
-       */
-      public java.lang.String getShipRegion() {
-        java.lang.Object ref = shipRegion_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          shipRegion_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string ShipRegion = 6;</code>
-       */
-      public com.google.protobuf.ByteString
-          getShipRegionBytes() {
-        java.lang.Object ref = shipRegion_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          shipRegion_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string ShipRegion = 6;</code>
-       */
-      public Builder setShipRegion(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000020;
-        shipRegion_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipRegion = 6;</code>
-       */
-      public Builder clearShipRegion() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        shipRegion_ = getDefaultInstance().getShipRegion();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipRegion = 6;</code>
-       */
-      public Builder setShipRegionBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000020;
-        shipRegion_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required string ShipPostalCode = 7;
-      private java.lang.Object shipPostalCode_ = "";
-      /**
-       * <code>required string ShipPostalCode = 7;</code>
-       */
-      public boolean hasShipPostalCode() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
-      }
-      /**
-       * <code>required string ShipPostalCode = 7;</code>
-       */
-      public java.lang.String getShipPostalCode() {
-        java.lang.Object ref = shipPostalCode_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          shipPostalCode_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string ShipPostalCode = 7;</code>
-       */
-      public com.google.protobuf.ByteString
-          getShipPostalCodeBytes() {
-        java.lang.Object ref = shipPostalCode_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          shipPostalCode_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string ShipPostalCode = 7;</code>
-       */
-      public Builder setShipPostalCode(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000040;
-        shipPostalCode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipPostalCode = 7;</code>
-       */
-      public Builder clearShipPostalCode() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        shipPostalCode_ = getDefaultInstance().getShipPostalCode();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipPostalCode = 7;</code>
-       */
-      public Builder setShipPostalCodeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000040;
-        shipPostalCode_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required string ShipCountry = 8;
-      private java.lang.Object shipCountry_ = "";
-      /**
-       * <code>required string ShipCountry = 8;</code>
-       */
-      public boolean hasShipCountry() {
-        return ((bitField0_ & 0x00000080) == 0x00000080);
-      }
-      /**
-       * <code>required string ShipCountry = 8;</code>
-       */
-      public java.lang.String getShipCountry() {
-        java.lang.Object ref = shipCountry_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          shipCountry_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string ShipCountry = 8;</code>
-       */
-      public com.google.protobuf.ByteString
-          getShipCountryBytes() {
-        java.lang.Object ref = shipCountry_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          shipCountry_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string ShipCountry = 8;</code>
-       */
-      public Builder setShipCountry(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000080;
-        shipCountry_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipCountry = 8;</code>
-       */
-      public Builder clearShipCountry() {
-        bitField0_ = (bitField0_ & ~0x00000080);
-        shipCountry_ = getDefaultInstance().getShipCountry();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ShipCountry = 8;</code>
-       */
-      public Builder setShipCountryBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000080;
-        shipCountry_ = value;
-        onChanged();
-        return this;
-      }
-
-      // optional int64 ShippedDate = 9;
-      private long shippedDate_ ;
-      /**
-       * <code>optional int64 ShippedDate = 9;</code>
-       */
-      public boolean hasShippedDate() {
-        return ((bitField0_ & 0x00000100) == 0x00000100);
-      }
-      /**
-       * <code>optional int64 ShippedDate = 9;</code>
-       */
-      public long getShippedDate() {
-        return shippedDate_;
-      }
-      /**
-       * <code>optional int64 ShippedDate = 9;</code>
-       */
-      public Builder setShippedDate(long value) {
-        bitField0_ |= 0x00000100;
-        shippedDate_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int64 ShippedDate = 9;</code>
-       */
-      public Builder clearShippedDate() {
-        bitField0_ = (bitField0_ & ~0x00000100);
-        shippedDate_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:ShipInfo)
-    }
-
-    static {
-      defaultInstance = new ShipInfo(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:ShipInfo)
-  }
-
-  public interface OrderOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // required string CustomerID = 1;
-    /**
-     * <code>required string CustomerID = 1;</code>
-     */
-    boolean hasCustomerID();
-    /**
-     * <code>required string CustomerID = 1;</code>
-     */
-    java.lang.String getCustomerID();
-    /**
-     * <code>required string CustomerID = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getCustomerIDBytes();
-
-    // required string EmployeeID = 2;
-    /**
-     * <code>required string EmployeeID = 2;</code>
-     */
-    boolean hasEmployeeID();
-    /**
-     * <code>required string EmployeeID = 2;</code>
-     */
-    java.lang.String getEmployeeID();
-    /**
-     * <code>required string EmployeeID = 2;</code>
-     */
-    com.google.protobuf.ByteString
-        getEmployeeIDBytes();
-
-    // required int64 OrderDate = 3;
-    /**
-     * <code>required int64 OrderDate = 3;</code>
-     */
-    boolean hasOrderDate();
-    /**
-     * <code>required int64 OrderDate = 3;</code>
-     */
-    long getOrderDate();
-
-    // required int64 RequiredDate = 4;
-    /**
-     * <code>required int64 RequiredDate = 4;</code>
-     */
-    boolean hasRequiredDate();
-    /**
-     * <code>required int64 RequiredDate = 4;</code>
-     */
-    long getRequiredDate();
-
-    // required .ShipInfo ShipInfo = 5;
-    /**
-     * <code>required .ShipInfo ShipInfo = 5;</code>
-     */
-    boolean hasShipInfo();
-    /**
-     * <code>required .ShipInfo ShipInfo = 5;</code>
-     */
-    bcml_converter.Output.ShipInfo getShipInfo();
-    /**
-     * <code>required .ShipInfo ShipInfo = 5;</code>
-     */
-    bcml_converter.Output.ShipInfoOrBuilder getShipInfoOrBuilder();
-  }
-  /**
-   * Protobuf type {@code Order}
-   */
-  public static final class Order extends
-      com.google.protobuf.GeneratedMessage
-      implements OrderOrBuilder {
-    // Use Order.newBuilder() to construct.
-    private Order(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private Order(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final Order defaultInstance;
-    public static Order getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public Order getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private Order(
+    private UnspecifiedType(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1686,35 +89,618 @@ public final class Output {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              customerID_ = input.readBytes();
+              baseObjectType_ = input.readBytes();
               break;
             }
             case 18: {
               bitField0_ |= 0x00000002;
-              employeeID_ = input.readBytes();
+              object_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return bcml_converter.Output.internal_static_bcml_converter_UnspecifiedType_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return bcml_converter.Output.internal_static_bcml_converter_UnspecifiedType_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              bcml_converter.Output.UnspecifiedType.class, bcml_converter.Output.UnspecifiedType.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<UnspecifiedType> PARSER =
+        new com.google.protobuf.AbstractParser<UnspecifiedType>() {
+      public UnspecifiedType parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new UnspecifiedType(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UnspecifiedType> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required string baseObjectType = 1;
+    public static final int BASEOBJECTTYPE_FIELD_NUMBER = 1;
+    private java.lang.Object baseObjectType_;
+    /**
+     * <code>required string baseObjectType = 1;</code>
+     */
+    public boolean hasBaseObjectType() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string baseObjectType = 1;</code>
+     */
+    public java.lang.String getBaseObjectType() {
+      java.lang.Object ref = baseObjectType_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          baseObjectType_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string baseObjectType = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getBaseObjectTypeBytes() {
+      java.lang.Object ref = baseObjectType_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        baseObjectType_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required bytes object = 2;
+    public static final int OBJECT_FIELD_NUMBER = 2;
+    private com.google.protobuf.ByteString object_;
+    /**
+     * <code>required bytes object = 2;</code>
+     */
+    public boolean hasObject() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required bytes object = 2;</code>
+     */
+    public com.google.protobuf.ByteString getObject() {
+      return object_;
+    }
+
+    private void initFields() {
+      baseObjectType_ = "";
+      object_ = com.google.protobuf.ByteString.EMPTY;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasBaseObjectType()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasObject()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getBaseObjectTypeBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, object_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getBaseObjectTypeBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, object_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static bcml_converter.Output.UnspecifiedType parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static bcml_converter.Output.UnspecifiedType parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static bcml_converter.Output.UnspecifiedType parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static bcml_converter.Output.UnspecifiedType parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static bcml_converter.Output.UnspecifiedType parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static bcml_converter.Output.UnspecifiedType parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static bcml_converter.Output.UnspecifiedType parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static bcml_converter.Output.UnspecifiedType parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static bcml_converter.Output.UnspecifiedType parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static bcml_converter.Output.UnspecifiedType parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(bcml_converter.Output.UnspecifiedType prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code bcml_converter.UnspecifiedType}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements bcml_converter.Output.UnspecifiedTypeOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return bcml_converter.Output.internal_static_bcml_converter_UnspecifiedType_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return bcml_converter.Output.internal_static_bcml_converter_UnspecifiedType_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                bcml_converter.Output.UnspecifiedType.class, bcml_converter.Output.UnspecifiedType.Builder.class);
+      }
+
+      // Construct using bcml_converter.Output.UnspecifiedType.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        baseObjectType_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        object_ = com.google.protobuf.ByteString.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return bcml_converter.Output.internal_static_bcml_converter_UnspecifiedType_descriptor;
+      }
+
+      public bcml_converter.Output.UnspecifiedType getDefaultInstanceForType() {
+        return bcml_converter.Output.UnspecifiedType.getDefaultInstance();
+      }
+
+      public bcml_converter.Output.UnspecifiedType build() {
+        bcml_converter.Output.UnspecifiedType result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public bcml_converter.Output.UnspecifiedType buildPartial() {
+        bcml_converter.Output.UnspecifiedType result = new bcml_converter.Output.UnspecifiedType(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.baseObjectType_ = baseObjectType_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.object_ = object_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof bcml_converter.Output.UnspecifiedType) {
+          return mergeFrom((bcml_converter.Output.UnspecifiedType)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(bcml_converter.Output.UnspecifiedType other) {
+        if (other == bcml_converter.Output.UnspecifiedType.getDefaultInstance()) return this;
+        if (other.hasBaseObjectType()) {
+          bitField0_ |= 0x00000001;
+          baseObjectType_ = other.baseObjectType_;
+          onChanged();
+        }
+        if (other.hasObject()) {
+          setObject(other.getObject());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasBaseObjectType()) {
+          
+          return false;
+        }
+        if (!hasObject()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        bcml_converter.Output.UnspecifiedType parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (bcml_converter.Output.UnspecifiedType) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required string baseObjectType = 1;
+      private java.lang.Object baseObjectType_ = "";
+      /**
+       * <code>required string baseObjectType = 1;</code>
+       */
+      public boolean hasBaseObjectType() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string baseObjectType = 1;</code>
+       */
+      public java.lang.String getBaseObjectType() {
+        java.lang.Object ref = baseObjectType_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          baseObjectType_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string baseObjectType = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getBaseObjectTypeBytes() {
+        java.lang.Object ref = baseObjectType_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          baseObjectType_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string baseObjectType = 1;</code>
+       */
+      public Builder setBaseObjectType(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        baseObjectType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string baseObjectType = 1;</code>
+       */
+      public Builder clearBaseObjectType() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        baseObjectType_ = getDefaultInstance().getBaseObjectType();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string baseObjectType = 1;</code>
+       */
+      public Builder setBaseObjectTypeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        baseObjectType_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required bytes object = 2;
+      private com.google.protobuf.ByteString object_ = com.google.protobuf.ByteString.EMPTY;
+      /**
+       * <code>required bytes object = 2;</code>
+       */
+      public boolean hasObject() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required bytes object = 2;</code>
+       */
+      public com.google.protobuf.ByteString getObject() {
+        return object_;
+      }
+      /**
+       * <code>required bytes object = 2;</code>
+       */
+      public Builder setObject(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        object_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required bytes object = 2;</code>
+       */
+      public Builder clearObject() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        object_ = getDefaultInstance().getObject();
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:bcml_converter.UnspecifiedType)
+    }
+
+    static {
+      defaultInstance = new UnspecifiedType(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:bcml_converter.UnspecifiedType)
+  }
+
+  public interface ItemOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required string title = 1;
+    /**
+     * <code>required string title = 1;</code>
+     */
+    boolean hasTitle();
+    /**
+     * <code>required string title = 1;</code>
+     */
+    java.lang.String getTitle();
+    /**
+     * <code>required string title = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getTitleBytes();
+
+    // optional string note = 2;
+    /**
+     * <code>optional string note = 2;</code>
+     */
+    boolean hasNote();
+    /**
+     * <code>optional string note = 2;</code>
+     */
+    java.lang.String getNote();
+    /**
+     * <code>optional string note = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getNoteBytes();
+
+    // required int64 quantity = 3;
+    /**
+     * <code>required int64 quantity = 3;</code>
+     */
+    boolean hasQuantity();
+    /**
+     * <code>required int64 quantity = 3;</code>
+     */
+    long getQuantity();
+
+    // required double price = 4;
+    /**
+     * <code>required double price = 4;</code>
+     */
+    boolean hasPrice();
+    /**
+     * <code>required double price = 4;</code>
+     */
+    double getPrice();
+  }
+  /**
+   * Protobuf type {@code bcml_converter.Item}
+   */
+  public static final class Item extends
+      com.google.protobuf.GeneratedMessage
+      implements ItemOrBuilder {
+    // Use Item.newBuilder() to construct.
+    private Item(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private Item(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final Item defaultInstance;
+    public static Item getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public Item getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Item(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              title_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              note_ = input.readBytes();
               break;
             }
             case 24: {
               bitField0_ |= 0x00000004;
-              orderDate_ = input.readInt64();
+              quantity_ = input.readInt64();
               break;
             }
-            case 32: {
+            case 33: {
               bitField0_ |= 0x00000008;
-              requiredDate_ = input.readInt64();
-              break;
-            }
-            case 42: {
-              bcml_converter.Output.ShipInfo.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000010) == 0x00000010)) {
-                subBuilder = shipInfo_.toBuilder();
-              }
-              shipInfo_ = input.readMessage(bcml_converter.Output.ShipInfo.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(shipInfo_);
-                shipInfo_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000010;
+              price_ = input.readDouble();
               break;
             }
           }
@@ -1731,46 +717,46 @@ public final class Output {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return bcml_converter.Output.internal_static_Order_descriptor;
+      return bcml_converter.Output.internal_static_bcml_converter_Item_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return bcml_converter.Output.internal_static_Order_fieldAccessorTable
+      return bcml_converter.Output.internal_static_bcml_converter_Item_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              bcml_converter.Output.Order.class, bcml_converter.Output.Order.Builder.class);
+              bcml_converter.Output.Item.class, bcml_converter.Output.Item.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<Order> PARSER =
-        new com.google.protobuf.AbstractParser<Order>() {
-      public Order parsePartialFrom(
+    public static com.google.protobuf.Parser<Item> PARSER =
+        new com.google.protobuf.AbstractParser<Item>() {
+      public Item parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Order(input, extensionRegistry);
+        return new Item(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Order> getParserForType() {
+    public com.google.protobuf.Parser<Item> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
-    // required string CustomerID = 1;
-    public static final int CUSTOMERID_FIELD_NUMBER = 1;
-    private java.lang.Object customerID_;
+    // required string title = 1;
+    public static final int TITLE_FIELD_NUMBER = 1;
+    private java.lang.Object title_;
     /**
-     * <code>required string CustomerID = 1;</code>
+     * <code>required string title = 1;</code>
      */
-    public boolean hasCustomerID() {
+    public boolean hasTitle() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string CustomerID = 1;</code>
+     * <code>required string title = 1;</code>
      */
-    public java.lang.String getCustomerID() {
-      java.lang.Object ref = customerID_;
+    public java.lang.String getTitle() {
+      java.lang.Object ref = title_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
@@ -1778,42 +764,42 @@ public final class Output {
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
-          customerID_ = s;
+          title_ = s;
         }
         return s;
       }
     }
     /**
-     * <code>required string CustomerID = 1;</code>
+     * <code>required string title = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getCustomerIDBytes() {
-      java.lang.Object ref = customerID_;
+        getTitleBytes() {
+      java.lang.Object ref = title_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        customerID_ = b;
+        title_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    // required string EmployeeID = 2;
-    public static final int EMPLOYEEID_FIELD_NUMBER = 2;
-    private java.lang.Object employeeID_;
+    // optional string note = 2;
+    public static final int NOTE_FIELD_NUMBER = 2;
+    private java.lang.Object note_;
     /**
-     * <code>required string EmployeeID = 2;</code>
+     * <code>optional string note = 2;</code>
      */
-    public boolean hasEmployeeID() {
+    public boolean hasNote() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required string EmployeeID = 2;</code>
+     * <code>optional string note = 2;</code>
      */
-    public java.lang.String getEmployeeID() {
-      java.lang.Object ref = employeeID_;
+    public java.lang.String getNote() {
+      java.lang.Object ref = note_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
@@ -1821,115 +807,80 @@ public final class Output {
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
-          employeeID_ = s;
+          note_ = s;
         }
         return s;
       }
     }
     /**
-     * <code>required string EmployeeID = 2;</code>
+     * <code>optional string note = 2;</code>
      */
     public com.google.protobuf.ByteString
-        getEmployeeIDBytes() {
-      java.lang.Object ref = employeeID_;
+        getNoteBytes() {
+      java.lang.Object ref = note_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        employeeID_ = b;
+        note_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    // required int64 OrderDate = 3;
-    public static final int ORDERDATE_FIELD_NUMBER = 3;
-    private long orderDate_;
+    // required int64 quantity = 3;
+    public static final int QUANTITY_FIELD_NUMBER = 3;
+    private long quantity_;
     /**
-     * <code>required int64 OrderDate = 3;</code>
+     * <code>required int64 quantity = 3;</code>
      */
-    public boolean hasOrderDate() {
+    public boolean hasQuantity() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required int64 OrderDate = 3;</code>
+     * <code>required int64 quantity = 3;</code>
      */
-    public long getOrderDate() {
-      return orderDate_;
+    public long getQuantity() {
+      return quantity_;
     }
 
-    // required int64 RequiredDate = 4;
-    public static final int REQUIREDDATE_FIELD_NUMBER = 4;
-    private long requiredDate_;
+    // required double price = 4;
+    public static final int PRICE_FIELD_NUMBER = 4;
+    private double price_;
     /**
-     * <code>required int64 RequiredDate = 4;</code>
+     * <code>required double price = 4;</code>
      */
-    public boolean hasRequiredDate() {
+    public boolean hasPrice() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>required int64 RequiredDate = 4;</code>
+     * <code>required double price = 4;</code>
      */
-    public long getRequiredDate() {
-      return requiredDate_;
-    }
-
-    // required .ShipInfo ShipInfo = 5;
-    public static final int SHIPINFO_FIELD_NUMBER = 5;
-    private bcml_converter.Output.ShipInfo shipInfo_;
-    /**
-     * <code>required .ShipInfo ShipInfo = 5;</code>
-     */
-    public boolean hasShipInfo() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>required .ShipInfo ShipInfo = 5;</code>
-     */
-    public bcml_converter.Output.ShipInfo getShipInfo() {
-      return shipInfo_;
-    }
-    /**
-     * <code>required .ShipInfo ShipInfo = 5;</code>
-     */
-    public bcml_converter.Output.ShipInfoOrBuilder getShipInfoOrBuilder() {
-      return shipInfo_;
+    public double getPrice() {
+      return price_;
     }
 
     private void initFields() {
-      customerID_ = "";
-      employeeID_ = "";
-      orderDate_ = 0L;
-      requiredDate_ = 0L;
-      shipInfo_ = bcml_converter.Output.ShipInfo.getDefaultInstance();
+      title_ = "";
+      note_ = "";
+      quantity_ = 0L;
+      price_ = 0D;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
-      if (!hasCustomerID()) {
+      if (!hasTitle()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasEmployeeID()) {
+      if (!hasQuantity()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasOrderDate()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasRequiredDate()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasShipInfo()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getShipInfo().isInitialized()) {
+      if (!hasPrice()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -1941,19 +892,16 @@ public final class Output {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getCustomerIDBytes());
+        output.writeBytes(1, getTitleBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getEmployeeIDBytes());
+        output.writeBytes(2, getNoteBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt64(3, orderDate_);
+        output.writeInt64(3, quantity_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt64(4, requiredDate_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeMessage(5, shipInfo_);
+        output.writeDouble(4, price_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -1966,23 +914,19 @@ public final class Output {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getCustomerIDBytes());
+          .computeBytesSize(1, getTitleBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getEmployeeIDBytes());
+          .computeBytesSize(2, getNoteBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(3, orderDate_);
+          .computeInt64Size(3, quantity_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(4, requiredDate_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, shipInfo_);
+          .computeDoubleSize(4, price_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1996,53 +940,53 @@ public final class Output {
       return super.writeReplace();
     }
 
-    public static bcml_converter.Output.Order parseFrom(
+    public static bcml_converter.Output.Item parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static bcml_converter.Output.Order parseFrom(
+    public static bcml_converter.Output.Item parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static bcml_converter.Output.Order parseFrom(byte[] data)
+    public static bcml_converter.Output.Item parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static bcml_converter.Output.Order parseFrom(
+    public static bcml_converter.Output.Item parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static bcml_converter.Output.Order parseFrom(java.io.InputStream input)
+    public static bcml_converter.Output.Item parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static bcml_converter.Output.Order parseFrom(
+    public static bcml_converter.Output.Item parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static bcml_converter.Output.Order parseDelimitedFrom(java.io.InputStream input)
+    public static bcml_converter.Output.Item parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static bcml_converter.Output.Order parseDelimitedFrom(
+    public static bcml_converter.Output.Item parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static bcml_converter.Output.Order parseFrom(
+    public static bcml_converter.Output.Item parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static bcml_converter.Output.Order parseFrom(
+    public static bcml_converter.Output.Item parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2051,7 +995,7 @@ public final class Output {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(bcml_converter.Output.Order prototype) {
+    public static Builder newBuilder(bcml_converter.Output.Item prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -2063,24 +1007,24 @@ public final class Output {
       return builder;
     }
     /**
-     * Protobuf type {@code Order}
+     * Protobuf type {@code bcml_converter.Item}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements bcml_converter.Output.OrderOrBuilder {
+       implements bcml_converter.Output.ItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return bcml_converter.Output.internal_static_Order_descriptor;
+        return bcml_converter.Output.internal_static_bcml_converter_Item_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return bcml_converter.Output.internal_static_Order_fieldAccessorTable
+        return bcml_converter.Output.internal_static_bcml_converter_Item_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                bcml_converter.Output.Order.class, bcml_converter.Output.Order.Builder.class);
+                bcml_converter.Output.Item.class, bcml_converter.Output.Item.Builder.class);
       }
 
-      // Construct using bcml_converter.Output.Order.newBuilder()
+      // Construct using bcml_converter.Output.Item.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2092,7 +1036,6 @@ public final class Output {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getShipInfoFieldBuilder();
         }
       }
       private static Builder create() {
@@ -2101,20 +1044,14 @@ public final class Output {
 
       public Builder clear() {
         super.clear();
-        customerID_ = "";
+        title_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        employeeID_ = "";
+        note_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        orderDate_ = 0L;
+        quantity_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000004);
-        requiredDate_ = 0L;
+        price_ = 0D;
         bitField0_ = (bitField0_ & ~0x00000008);
-        if (shipInfoBuilder_ == null) {
-          shipInfo_ = bcml_converter.Output.ShipInfo.getDefaultInstance();
-        } else {
-          shipInfoBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000010);
         return this;
       }
 
@@ -2124,110 +1061,87 @@ public final class Output {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return bcml_converter.Output.internal_static_Order_descriptor;
+        return bcml_converter.Output.internal_static_bcml_converter_Item_descriptor;
       }
 
-      public bcml_converter.Output.Order getDefaultInstanceForType() {
-        return bcml_converter.Output.Order.getDefaultInstance();
+      public bcml_converter.Output.Item getDefaultInstanceForType() {
+        return bcml_converter.Output.Item.getDefaultInstance();
       }
 
-      public bcml_converter.Output.Order build() {
-        bcml_converter.Output.Order result = buildPartial();
+      public bcml_converter.Output.Item build() {
+        bcml_converter.Output.Item result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public bcml_converter.Output.Order buildPartial() {
-        bcml_converter.Output.Order result = new bcml_converter.Output.Order(this);
+      public bcml_converter.Output.Item buildPartial() {
+        bcml_converter.Output.Item result = new bcml_converter.Output.Item(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.customerID_ = customerID_;
+        result.title_ = title_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.employeeID_ = employeeID_;
+        result.note_ = note_;
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.orderDate_ = orderDate_;
+        result.quantity_ = quantity_;
         if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
           to_bitField0_ |= 0x00000008;
         }
-        result.requiredDate_ = requiredDate_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        if (shipInfoBuilder_ == null) {
-          result.shipInfo_ = shipInfo_;
-        } else {
-          result.shipInfo_ = shipInfoBuilder_.build();
-        }
+        result.price_ = price_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof bcml_converter.Output.Order) {
-          return mergeFrom((bcml_converter.Output.Order)other);
+        if (other instanceof bcml_converter.Output.Item) {
+          return mergeFrom((bcml_converter.Output.Item)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(bcml_converter.Output.Order other) {
-        if (other == bcml_converter.Output.Order.getDefaultInstance()) return this;
-        if (other.hasCustomerID()) {
+      public Builder mergeFrom(bcml_converter.Output.Item other) {
+        if (other == bcml_converter.Output.Item.getDefaultInstance()) return this;
+        if (other.hasTitle()) {
           bitField0_ |= 0x00000001;
-          customerID_ = other.customerID_;
+          title_ = other.title_;
           onChanged();
         }
-        if (other.hasEmployeeID()) {
+        if (other.hasNote()) {
           bitField0_ |= 0x00000002;
-          employeeID_ = other.employeeID_;
+          note_ = other.note_;
           onChanged();
         }
-        if (other.hasOrderDate()) {
-          setOrderDate(other.getOrderDate());
+        if (other.hasQuantity()) {
+          setQuantity(other.getQuantity());
         }
-        if (other.hasRequiredDate()) {
-          setRequiredDate(other.getRequiredDate());
-        }
-        if (other.hasShipInfo()) {
-          mergeShipInfo(other.getShipInfo());
+        if (other.hasPrice()) {
+          setPrice(other.getPrice());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasCustomerID()) {
+        if (!hasTitle()) {
           
           return false;
         }
-        if (!hasEmployeeID()) {
+        if (!hasQuantity()) {
           
           return false;
         }
-        if (!hasOrderDate()) {
-          
-          return false;
-        }
-        if (!hasRequiredDate()) {
-          
-          return false;
-        }
-        if (!hasShipInfo()) {
-          
-          return false;
-        }
-        if (!getShipInfo().isInitialized()) {
+        if (!hasPrice()) {
           
           return false;
         }
@@ -2238,11 +1152,11 @@ public final class Output {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        bcml_converter.Output.Order parsedMessage = null;
+        bcml_converter.Output.Item parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (bcml_converter.Output.Order) e.getUnfinishedMessage();
+          parsedMessage = (bcml_converter.Output.Item) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -2253,1146 +1167,323 @@ public final class Output {
       }
       private int bitField0_;
 
-      // required string CustomerID = 1;
-      private java.lang.Object customerID_ = "";
+      // required string title = 1;
+      private java.lang.Object title_ = "";
       /**
-       * <code>required string CustomerID = 1;</code>
+       * <code>required string title = 1;</code>
        */
-      public boolean hasCustomerID() {
+      public boolean hasTitle() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required string CustomerID = 1;</code>
+       * <code>required string title = 1;</code>
        */
-      public java.lang.String getCustomerID() {
-        java.lang.Object ref = customerID_;
+      public java.lang.String getTitle() {
+        java.lang.Object ref = title_;
         if (!(ref instanceof java.lang.String)) {
           java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
-          customerID_ = s;
+          title_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>required string CustomerID = 1;</code>
+       * <code>required string title = 1;</code>
        */
       public com.google.protobuf.ByteString
-          getCustomerIDBytes() {
-        java.lang.Object ref = customerID_;
+          getTitleBytes() {
+        java.lang.Object ref = title_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          customerID_ = b;
+          title_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>required string CustomerID = 1;</code>
+       * <code>required string title = 1;</code>
        */
-      public Builder setCustomerID(
+      public Builder setTitle(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-        customerID_ = value;
+        title_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string CustomerID = 1;</code>
+       * <code>required string title = 1;</code>
        */
-      public Builder clearCustomerID() {
+      public Builder clearTitle() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        customerID_ = getDefaultInstance().getCustomerID();
+        title_ = getDefaultInstance().getTitle();
         onChanged();
         return this;
       }
       /**
-       * <code>required string CustomerID = 1;</code>
+       * <code>required string title = 1;</code>
        */
-      public Builder setCustomerIDBytes(
+      public Builder setTitleBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-        customerID_ = value;
+        title_ = value;
         onChanged();
         return this;
       }
 
-      // required string EmployeeID = 2;
-      private java.lang.Object employeeID_ = "";
+      // optional string note = 2;
+      private java.lang.Object note_ = "";
       /**
-       * <code>required string EmployeeID = 2;</code>
+       * <code>optional string note = 2;</code>
        */
-      public boolean hasEmployeeID() {
+      public boolean hasNote() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required string EmployeeID = 2;</code>
+       * <code>optional string note = 2;</code>
        */
-      public java.lang.String getEmployeeID() {
-        java.lang.Object ref = employeeID_;
+      public java.lang.String getNote() {
+        java.lang.Object ref = note_;
         if (!(ref instanceof java.lang.String)) {
           java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
-          employeeID_ = s;
+          note_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>required string EmployeeID = 2;</code>
+       * <code>optional string note = 2;</code>
        */
       public com.google.protobuf.ByteString
-          getEmployeeIDBytes() {
-        java.lang.Object ref = employeeID_;
+          getNoteBytes() {
+        java.lang.Object ref = note_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          employeeID_ = b;
+          note_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>required string EmployeeID = 2;</code>
+       * <code>optional string note = 2;</code>
        */
-      public Builder setEmployeeID(
+      public Builder setNote(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000002;
-        employeeID_ = value;
+        note_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string EmployeeID = 2;</code>
+       * <code>optional string note = 2;</code>
        */
-      public Builder clearEmployeeID() {
+      public Builder clearNote() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        employeeID_ = getDefaultInstance().getEmployeeID();
+        note_ = getDefaultInstance().getNote();
         onChanged();
         return this;
       }
       /**
-       * <code>required string EmployeeID = 2;</code>
+       * <code>optional string note = 2;</code>
        */
-      public Builder setEmployeeIDBytes(
+      public Builder setNoteBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000002;
-        employeeID_ = value;
+        note_ = value;
         onChanged();
         return this;
       }
 
-      // required int64 OrderDate = 3;
-      private long orderDate_ ;
+      // required int64 quantity = 3;
+      private long quantity_ ;
       /**
-       * <code>required int64 OrderDate = 3;</code>
+       * <code>required int64 quantity = 3;</code>
        */
-      public boolean hasOrderDate() {
+      public boolean hasQuantity() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required int64 OrderDate = 3;</code>
+       * <code>required int64 quantity = 3;</code>
        */
-      public long getOrderDate() {
-        return orderDate_;
+      public long getQuantity() {
+        return quantity_;
       }
       /**
-       * <code>required int64 OrderDate = 3;</code>
+       * <code>required int64 quantity = 3;</code>
        */
-      public Builder setOrderDate(long value) {
+      public Builder setQuantity(long value) {
         bitField0_ |= 0x00000004;
-        orderDate_ = value;
+        quantity_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int64 OrderDate = 3;</code>
+       * <code>required int64 quantity = 3;</code>
        */
-      public Builder clearOrderDate() {
+      public Builder clearQuantity() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        orderDate_ = 0L;
+        quantity_ = 0L;
         onChanged();
         return this;
       }
 
-      // required int64 RequiredDate = 4;
-      private long requiredDate_ ;
+      // required double price = 4;
+      private double price_ ;
       /**
-       * <code>required int64 RequiredDate = 4;</code>
+       * <code>required double price = 4;</code>
        */
-      public boolean hasRequiredDate() {
+      public boolean hasPrice() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required int64 RequiredDate = 4;</code>
+       * <code>required double price = 4;</code>
        */
-      public long getRequiredDate() {
-        return requiredDate_;
+      public double getPrice() {
+        return price_;
       }
       /**
-       * <code>required int64 RequiredDate = 4;</code>
+       * <code>required double price = 4;</code>
        */
-      public Builder setRequiredDate(long value) {
+      public Builder setPrice(double value) {
         bitField0_ |= 0x00000008;
-        requiredDate_ = value;
+        price_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int64 RequiredDate = 4;</code>
+       * <code>required double price = 4;</code>
        */
-      public Builder clearRequiredDate() {
+      public Builder clearPrice() {
         bitField0_ = (bitField0_ & ~0x00000008);
-        requiredDate_ = 0L;
+        price_ = 0D;
         onChanged();
         return this;
       }
 
-      // required .ShipInfo ShipInfo = 5;
-      private bcml_converter.Output.ShipInfo shipInfo_ = bcml_converter.Output.ShipInfo.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          bcml_converter.Output.ShipInfo, bcml_converter.Output.ShipInfo.Builder, bcml_converter.Output.ShipInfoOrBuilder> shipInfoBuilder_;
-      /**
-       * <code>required .ShipInfo ShipInfo = 5;</code>
-       */
-      public boolean hasShipInfo() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>required .ShipInfo ShipInfo = 5;</code>
-       */
-      public bcml_converter.Output.ShipInfo getShipInfo() {
-        if (shipInfoBuilder_ == null) {
-          return shipInfo_;
-        } else {
-          return shipInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>required .ShipInfo ShipInfo = 5;</code>
-       */
-      public Builder setShipInfo(bcml_converter.Output.ShipInfo value) {
-        if (shipInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          shipInfo_ = value;
-          onChanged();
-        } else {
-          shipInfoBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000010;
-        return this;
-      }
-      /**
-       * <code>required .ShipInfo ShipInfo = 5;</code>
-       */
-      public Builder setShipInfo(
-          bcml_converter.Output.ShipInfo.Builder builderForValue) {
-        if (shipInfoBuilder_ == null) {
-          shipInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          shipInfoBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000010;
-        return this;
-      }
-      /**
-       * <code>required .ShipInfo ShipInfo = 5;</code>
-       */
-      public Builder mergeShipInfo(bcml_converter.Output.ShipInfo value) {
-        if (shipInfoBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) == 0x00000010) &&
-              shipInfo_ != bcml_converter.Output.ShipInfo.getDefaultInstance()) {
-            shipInfo_ =
-              bcml_converter.Output.ShipInfo.newBuilder(shipInfo_).mergeFrom(value).buildPartial();
-          } else {
-            shipInfo_ = value;
-          }
-          onChanged();
-        } else {
-          shipInfoBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000010;
-        return this;
-      }
-      /**
-       * <code>required .ShipInfo ShipInfo = 5;</code>
-       */
-      public Builder clearShipInfo() {
-        if (shipInfoBuilder_ == null) {
-          shipInfo_ = bcml_converter.Output.ShipInfo.getDefaultInstance();
-          onChanged();
-        } else {
-          shipInfoBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000010);
-        return this;
-      }
-      /**
-       * <code>required .ShipInfo ShipInfo = 5;</code>
-       */
-      public bcml_converter.Output.ShipInfo.Builder getShipInfoBuilder() {
-        bitField0_ |= 0x00000010;
-        onChanged();
-        return getShipInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>required .ShipInfo ShipInfo = 5;</code>
-       */
-      public bcml_converter.Output.ShipInfoOrBuilder getShipInfoOrBuilder() {
-        if (shipInfoBuilder_ != null) {
-          return shipInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return shipInfo_;
-        }
-      }
-      /**
-       * <code>required .ShipInfo ShipInfo = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          bcml_converter.Output.ShipInfo, bcml_converter.Output.ShipInfo.Builder, bcml_converter.Output.ShipInfoOrBuilder> 
-          getShipInfoFieldBuilder() {
-        if (shipInfoBuilder_ == null) {
-          shipInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              bcml_converter.Output.ShipInfo, bcml_converter.Output.ShipInfo.Builder, bcml_converter.Output.ShipInfoOrBuilder>(
-                  shipInfo_,
-                  getParentForChildren(),
-                  isClean());
-          shipInfo_ = null;
-        }
-        return shipInfoBuilder_;
-      }
-
-      // @@protoc_insertion_point(builder_scope:Order)
+      // @@protoc_insertion_point(builder_scope:bcml_converter.Item)
     }
 
     static {
-      defaultInstance = new Order(true);
+      defaultInstance = new Item(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:Order)
+    // @@protoc_insertion_point(class_scope:bcml_converter.Item)
   }
 
-  public interface OrdersOrBuilder
+  public interface ShiptoOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // repeated .Order Order = 1;
+    // required string name = 1;
     /**
-     * <code>repeated .Order Order = 1;</code>
+     * <code>required string name = 1;</code>
      */
-    java.util.List<bcml_converter.Output.Order> 
-        getOrderList();
+    boolean hasName();
     /**
-     * <code>repeated .Order Order = 1;</code>
+     * <code>required string name = 1;</code>
      */
-    bcml_converter.Output.Order getOrder(int index);
+    java.lang.String getName();
     /**
-     * <code>repeated .Order Order = 1;</code>
+     * <code>required string name = 1;</code>
      */
-    int getOrderCount();
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    // required string address = 2;
     /**
-     * <code>repeated .Order Order = 1;</code>
-     */
-    java.util.List<? extends bcml_converter.Output.OrderOrBuilder> 
-        getOrderOrBuilderList();
-    /**
-     * <code>repeated .Order Order = 1;</code>
-     */
-    bcml_converter.Output.OrderOrBuilder getOrderOrBuilder(
-        int index);
-  }
-  /**
-   * Protobuf type {@code Orders}
-   */
-  public static final class Orders extends
-      com.google.protobuf.GeneratedMessage
-      implements OrdersOrBuilder {
-    // Use Orders.newBuilder() to construct.
-    private Orders(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private Orders(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final Orders defaultInstance;
-    public static Orders getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public Orders getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private Orders(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                order_ = new java.util.ArrayList<bcml_converter.Output.Order>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              order_.add(input.readMessage(bcml_converter.Output.Order.PARSER, extensionRegistry));
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-          order_ = java.util.Collections.unmodifiableList(order_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return bcml_converter.Output.internal_static_Orders_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return bcml_converter.Output.internal_static_Orders_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              bcml_converter.Output.Orders.class, bcml_converter.Output.Orders.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<Orders> PARSER =
-        new com.google.protobuf.AbstractParser<Orders>() {
-      public Orders parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Orders(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<Orders> getParserForType() {
-      return PARSER;
-    }
-
-    // repeated .Order Order = 1;
-    public static final int ORDER_FIELD_NUMBER = 1;
-    private java.util.List<bcml_converter.Output.Order> order_;
-    /**
-     * <code>repeated .Order Order = 1;</code>
-     */
-    public java.util.List<bcml_converter.Output.Order> getOrderList() {
-      return order_;
-    }
-    /**
-     * <code>repeated .Order Order = 1;</code>
-     */
-    public java.util.List<? extends bcml_converter.Output.OrderOrBuilder> 
-        getOrderOrBuilderList() {
-      return order_;
-    }
-    /**
-     * <code>repeated .Order Order = 1;</code>
-     */
-    public int getOrderCount() {
-      return order_.size();
-    }
-    /**
-     * <code>repeated .Order Order = 1;</code>
-     */
-    public bcml_converter.Output.Order getOrder(int index) {
-      return order_.get(index);
-    }
-    /**
-     * <code>repeated .Order Order = 1;</code>
-     */
-    public bcml_converter.Output.OrderOrBuilder getOrderOrBuilder(
-        int index) {
-      return order_.get(index);
-    }
-
-    private void initFields() {
-      order_ = java.util.Collections.emptyList();
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      for (int i = 0; i < getOrderCount(); i++) {
-        if (!getOrder(i).isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      for (int i = 0; i < order_.size(); i++) {
-        output.writeMessage(1, order_.get(i));
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      for (int i = 0; i < order_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, order_.get(i));
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static bcml_converter.Output.Orders parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static bcml_converter.Output.Orders parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static bcml_converter.Output.Orders parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static bcml_converter.Output.Orders parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static bcml_converter.Output.Orders parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static bcml_converter.Output.Orders parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static bcml_converter.Output.Orders parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static bcml_converter.Output.Orders parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static bcml_converter.Output.Orders parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static bcml_converter.Output.Orders parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(bcml_converter.Output.Orders prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code Orders}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements bcml_converter.Output.OrdersOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return bcml_converter.Output.internal_static_Orders_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return bcml_converter.Output.internal_static_Orders_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                bcml_converter.Output.Orders.class, bcml_converter.Output.Orders.Builder.class);
-      }
-
-      // Construct using bcml_converter.Output.Orders.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getOrderFieldBuilder();
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-
-      public Builder clear() {
-        super.clear();
-        if (orderBuilder_ == null) {
-          order_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          orderBuilder_.clear();
-        }
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return bcml_converter.Output.internal_static_Orders_descriptor;
-      }
-
-      public bcml_converter.Output.Orders getDefaultInstanceForType() {
-        return bcml_converter.Output.Orders.getDefaultInstance();
-      }
-
-      public bcml_converter.Output.Orders build() {
-        bcml_converter.Output.Orders result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public bcml_converter.Output.Orders buildPartial() {
-        bcml_converter.Output.Orders result = new bcml_converter.Output.Orders(this);
-        int from_bitField0_ = bitField0_;
-        if (orderBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) == 0x00000001)) {
-            order_ = java.util.Collections.unmodifiableList(order_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.order_ = order_;
-        } else {
-          result.order_ = orderBuilder_.build();
-        }
-        onBuilt();
-        return result;
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof bcml_converter.Output.Orders) {
-          return mergeFrom((bcml_converter.Output.Orders)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(bcml_converter.Output.Orders other) {
-        if (other == bcml_converter.Output.Orders.getDefaultInstance()) return this;
-        if (orderBuilder_ == null) {
-          if (!other.order_.isEmpty()) {
-            if (order_.isEmpty()) {
-              order_ = other.order_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureOrderIsMutable();
-              order_.addAll(other.order_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.order_.isEmpty()) {
-            if (orderBuilder_.isEmpty()) {
-              orderBuilder_.dispose();
-              orderBuilder_ = null;
-              order_ = other.order_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              orderBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getOrderFieldBuilder() : null;
-            } else {
-              orderBuilder_.addAllMessages(other.order_);
-            }
-          }
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        for (int i = 0; i < getOrderCount(); i++) {
-          if (!getOrder(i).isInitialized()) {
-            
-            return false;
-          }
-        }
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        bcml_converter.Output.Orders parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (bcml_converter.Output.Orders) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // repeated .Order Order = 1;
-      private java.util.List<bcml_converter.Output.Order> order_ =
-        java.util.Collections.emptyList();
-      private void ensureOrderIsMutable() {
-        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          order_ = new java.util.ArrayList<bcml_converter.Output.Order>(order_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilder<
-          bcml_converter.Output.Order, bcml_converter.Output.Order.Builder, bcml_converter.Output.OrderOrBuilder> orderBuilder_;
-
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public java.util.List<bcml_converter.Output.Order> getOrderList() {
-        if (orderBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(order_);
-        } else {
-          return orderBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public int getOrderCount() {
-        if (orderBuilder_ == null) {
-          return order_.size();
-        } else {
-          return orderBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public bcml_converter.Output.Order getOrder(int index) {
-        if (orderBuilder_ == null) {
-          return order_.get(index);
-        } else {
-          return orderBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public Builder setOrder(
-          int index, bcml_converter.Output.Order value) {
-        if (orderBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureOrderIsMutable();
-          order_.set(index, value);
-          onChanged();
-        } else {
-          orderBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public Builder setOrder(
-          int index, bcml_converter.Output.Order.Builder builderForValue) {
-        if (orderBuilder_ == null) {
-          ensureOrderIsMutable();
-          order_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          orderBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public Builder addOrder(bcml_converter.Output.Order value) {
-        if (orderBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureOrderIsMutable();
-          order_.add(value);
-          onChanged();
-        } else {
-          orderBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public Builder addOrder(
-          int index, bcml_converter.Output.Order value) {
-        if (orderBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureOrderIsMutable();
-          order_.add(index, value);
-          onChanged();
-        } else {
-          orderBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public Builder addOrder(
-          bcml_converter.Output.Order.Builder builderForValue) {
-        if (orderBuilder_ == null) {
-          ensureOrderIsMutable();
-          order_.add(builderForValue.build());
-          onChanged();
-        } else {
-          orderBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public Builder addOrder(
-          int index, bcml_converter.Output.Order.Builder builderForValue) {
-        if (orderBuilder_ == null) {
-          ensureOrderIsMutable();
-          order_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          orderBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public Builder addAllOrder(
-          java.lang.Iterable<? extends bcml_converter.Output.Order> values) {
-        if (orderBuilder_ == null) {
-          ensureOrderIsMutable();
-          super.addAll(values, order_);
-          onChanged();
-        } else {
-          orderBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public Builder clearOrder() {
-        if (orderBuilder_ == null) {
-          order_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          orderBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public Builder removeOrder(int index) {
-        if (orderBuilder_ == null) {
-          ensureOrderIsMutable();
-          order_.remove(index);
-          onChanged();
-        } else {
-          orderBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public bcml_converter.Output.Order.Builder getOrderBuilder(
-          int index) {
-        return getOrderFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public bcml_converter.Output.OrderOrBuilder getOrderOrBuilder(
-          int index) {
-        if (orderBuilder_ == null) {
-          return order_.get(index);  } else {
-          return orderBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public java.util.List<? extends bcml_converter.Output.OrderOrBuilder> 
-           getOrderOrBuilderList() {
-        if (orderBuilder_ != null) {
-          return orderBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(order_);
-        }
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public bcml_converter.Output.Order.Builder addOrderBuilder() {
-        return getOrderFieldBuilder().addBuilder(
-            bcml_converter.Output.Order.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public bcml_converter.Output.Order.Builder addOrderBuilder(
-          int index) {
-        return getOrderFieldBuilder().addBuilder(
-            index, bcml_converter.Output.Order.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .Order Order = 1;</code>
-       */
-      public java.util.List<bcml_converter.Output.Order.Builder> 
-           getOrderBuilderList() {
-        return getOrderFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          bcml_converter.Output.Order, bcml_converter.Output.Order.Builder, bcml_converter.Output.OrderOrBuilder> 
-          getOrderFieldBuilder() {
-        if (orderBuilder_ == null) {
-          orderBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              bcml_converter.Output.Order, bcml_converter.Output.Order.Builder, bcml_converter.Output.OrderOrBuilder>(
-                  order_,
-                  ((bitField0_ & 0x00000001) == 0x00000001),
-                  getParentForChildren(),
-                  isClean());
-          order_ = null;
-        }
-        return orderBuilder_;
-      }
-
-      // @@protoc_insertion_point(builder_scope:Orders)
-    }
-
-    static {
-      defaultInstance = new Orders(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:Orders)
-  }
-
-  public interface AddressOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // required string Address = 1;
-    /**
-     * <code>required string Address = 1;</code>
+     * <code>required string address = 2;</code>
      */
     boolean hasAddress();
     /**
-     * <code>required string Address = 1;</code>
+     * <code>required string address = 2;</code>
      */
     java.lang.String getAddress();
     /**
-     * <code>required string Address = 1;</code>
+     * <code>required string address = 2;</code>
      */
     com.google.protobuf.ByteString
         getAddressBytes();
 
-    // required string City = 2;
+    // required string city = 3;
     /**
-     * <code>required string City = 2;</code>
+     * <code>required string city = 3;</code>
      */
     boolean hasCity();
     /**
-     * <code>required string City = 2;</code>
+     * <code>required string city = 3;</code>
      */
     java.lang.String getCity();
     /**
-     * <code>required string City = 2;</code>
+     * <code>required string city = 3;</code>
      */
     com.google.protobuf.ByteString
         getCityBytes();
 
-    // required string Region = 3;
+    // required string country = 4;
     /**
-     * <code>required string Region = 3;</code>
-     */
-    boolean hasRegion();
-    /**
-     * <code>required string Region = 3;</code>
-     */
-    java.lang.String getRegion();
-    /**
-     * <code>required string Region = 3;</code>
-     */
-    com.google.protobuf.ByteString
-        getRegionBytes();
-
-    // required string PostalCode = 4;
-    /**
-     * <code>required string PostalCode = 4;</code>
-     */
-    boolean hasPostalCode();
-    /**
-     * <code>required string PostalCode = 4;</code>
-     */
-    java.lang.String getPostalCode();
-    /**
-     * <code>required string PostalCode = 4;</code>
-     */
-    com.google.protobuf.ByteString
-        getPostalCodeBytes();
-
-    // required string Country = 5;
-    /**
-     * <code>required string Country = 5;</code>
+     * <code>required string country = 4;</code>
      */
     boolean hasCountry();
     /**
-     * <code>required string Country = 5;</code>
+     * <code>required string country = 4;</code>
      */
     java.lang.String getCountry();
     /**
-     * <code>required string Country = 5;</code>
+     * <code>required string country = 4;</code>
      */
     com.google.protobuf.ByteString
         getCountryBytes();
 
-    // optional string CustomerID = 6;
+    // required .bcml_converter.Shipto.CarEnum car = 5;
     /**
-     * <code>optional string CustomerID = 6;</code>
+     * <code>required .bcml_converter.Shipto.CarEnum car = 5;</code>
      */
-    boolean hasCustomerID();
+    boolean hasCar();
     /**
-     * <code>optional string CustomerID = 6;</code>
+     * <code>required .bcml_converter.Shipto.CarEnum car = 5;</code>
      */
-    java.lang.String getCustomerID();
-    /**
-     * <code>optional string CustomerID = 6;</code>
-     */
-    com.google.protobuf.ByteString
-        getCustomerIDBytes();
+    bcml_converter.Output.Shipto.CarEnum getCar();
   }
   /**
-   * Protobuf type {@code Address}
+   * Protobuf type {@code bcml_converter.Shipto}
    */
-  public static final class Address extends
+  public static final class Shipto extends
       com.google.protobuf.GeneratedMessage
-      implements AddressOrBuilder {
-    // Use Address.newBuilder() to construct.
-    private Address(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements ShiptoOrBuilder {
+    // Use Shipto.newBuilder() to construct.
+    private Shipto(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private Address(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private Shipto(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final Address defaultInstance;
-    public static Address getDefaultInstance() {
+    private static final Shipto defaultInstance;
+    public static Shipto getDefaultInstance() {
       return defaultInstance;
     }
 
-    public Address getDefaultInstanceForType() {
+    public Shipto getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -3402,7 +1493,7 @@ public final class Output {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private Address(
+    private Shipto(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3427,32 +1518,33 @@ public final class Output {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              address_ = input.readBytes();
+              name_ = input.readBytes();
               break;
             }
             case 18: {
               bitField0_ |= 0x00000002;
-              city_ = input.readBytes();
+              address_ = input.readBytes();
               break;
             }
             case 26: {
               bitField0_ |= 0x00000004;
-              region_ = input.readBytes();
+              city_ = input.readBytes();
               break;
             }
             case 34: {
               bitField0_ |= 0x00000008;
-              postalCode_ = input.readBytes();
-              break;
-            }
-            case 42: {
-              bitField0_ |= 0x00000010;
               country_ = input.readBytes();
               break;
             }
-            case 50: {
-              bitField0_ |= 0x00000020;
-              customerID_ = input.readBytes();
+            case 40: {
+              int rawValue = input.readEnum();
+              bcml_converter.Output.Shipto.CarEnum value = bcml_converter.Output.Shipto.CarEnum.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(5, rawValue);
+              } else {
+                bitField0_ |= 0x00000010;
+                car_ = value;
+              }
               break;
             }
           }
@@ -3469,43 +1561,177 @@ public final class Output {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return bcml_converter.Output.internal_static_Address_descriptor;
+      return bcml_converter.Output.internal_static_bcml_converter_Shipto_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return bcml_converter.Output.internal_static_Address_fieldAccessorTable
+      return bcml_converter.Output.internal_static_bcml_converter_Shipto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              bcml_converter.Output.Address.class, bcml_converter.Output.Address.Builder.class);
+              bcml_converter.Output.Shipto.class, bcml_converter.Output.Shipto.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<Address> PARSER =
-        new com.google.protobuf.AbstractParser<Address>() {
-      public Address parsePartialFrom(
+    public static com.google.protobuf.Parser<Shipto> PARSER =
+        new com.google.protobuf.AbstractParser<Shipto>() {
+      public Shipto parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Address(input, extensionRegistry);
+        return new Shipto(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Address> getParserForType() {
+    public com.google.protobuf.Parser<Shipto> getParserForType() {
       return PARSER;
     }
 
-    private int bitField0_;
-    // required string Address = 1;
-    public static final int ADDRESS_FIELD_NUMBER = 1;
-    private java.lang.Object address_;
     /**
-     * <code>required string Address = 1;</code>
+     * Protobuf enum {@code bcml_converter.Shipto.CarEnum}
      */
-    public boolean hasAddress() {
+    public enum CarEnum
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>Audi = 1;</code>
+       */
+      Audi(0, 1),
+      /**
+       * <code>BMW = 2;</code>
+       */
+      BMW(1, 2),
+      /**
+       * <code>Golf = 3;</code>
+       */
+      Golf(2, 3),
+      ;
+
+      /**
+       * <code>Audi = 1;</code>
+       */
+      public static final int Audi_VALUE = 1;
+      /**
+       * <code>BMW = 2;</code>
+       */
+      public static final int BMW_VALUE = 2;
+      /**
+       * <code>Golf = 3;</code>
+       */
+      public static final int Golf_VALUE = 3;
+
+
+      public final int getNumber() { return value; }
+
+      public static CarEnum valueOf(int value) {
+        switch (value) {
+          case 1: return Audi;
+          case 2: return BMW;
+          case 3: return Golf;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<CarEnum>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static com.google.protobuf.Internal.EnumLiteMap<CarEnum>
+          internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<CarEnum>() {
+              public CarEnum findValueByNumber(int number) {
+                return CarEnum.valueOf(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return bcml_converter.Output.Shipto.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final CarEnum[] VALUES = values();
+
+      public static CarEnum valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private CarEnum(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:bcml_converter.Shipto.CarEnum)
+    }
+
+    private int bitField0_;
+    // required string name = 1;
+    public static final int NAME_FIELD_NUMBER = 1;
+    private java.lang.Object name_;
+    /**
+     * <code>required string name = 1;</code>
+     */
+    public boolean hasName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string Address = 1;</code>
+     * <code>required string name = 1;</code>
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required string address = 2;
+    public static final int ADDRESS_FIELD_NUMBER = 2;
+    private java.lang.Object address_;
+    /**
+     * <code>required string address = 2;</code>
+     */
+    public boolean hasAddress() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string address = 2;</code>
      */
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
@@ -3522,7 +1748,7 @@ public final class Output {
       }
     }
     /**
-     * <code>required string Address = 1;</code>
+     * <code>required string address = 2;</code>
      */
     public com.google.protobuf.ByteString
         getAddressBytes() {
@@ -3538,17 +1764,17 @@ public final class Output {
       }
     }
 
-    // required string City = 2;
-    public static final int CITY_FIELD_NUMBER = 2;
+    // required string city = 3;
+    public static final int CITY_FIELD_NUMBER = 3;
     private java.lang.Object city_;
     /**
-     * <code>required string City = 2;</code>
+     * <code>required string city = 3;</code>
      */
     public boolean hasCity() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+      return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required string City = 2;</code>
+     * <code>required string city = 3;</code>
      */
     public java.lang.String getCity() {
       java.lang.Object ref = city_;
@@ -3565,7 +1791,7 @@ public final class Output {
       }
     }
     /**
-     * <code>required string City = 2;</code>
+     * <code>required string city = 3;</code>
      */
     public com.google.protobuf.ByteString
         getCityBytes() {
@@ -3581,103 +1807,17 @@ public final class Output {
       }
     }
 
-    // required string Region = 3;
-    public static final int REGION_FIELD_NUMBER = 3;
-    private java.lang.Object region_;
+    // required string country = 4;
+    public static final int COUNTRY_FIELD_NUMBER = 4;
+    private java.lang.Object country_;
     /**
-     * <code>required string Region = 3;</code>
+     * <code>required string country = 4;</code>
      */
-    public boolean hasRegion() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>required string Region = 3;</code>
-     */
-    public java.lang.String getRegion() {
-      java.lang.Object ref = region_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          region_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string Region = 3;</code>
-     */
-    public com.google.protobuf.ByteString
-        getRegionBytes() {
-      java.lang.Object ref = region_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        region_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // required string PostalCode = 4;
-    public static final int POSTALCODE_FIELD_NUMBER = 4;
-    private java.lang.Object postalCode_;
-    /**
-     * <code>required string PostalCode = 4;</code>
-     */
-    public boolean hasPostalCode() {
+    public boolean hasCountry() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>required string PostalCode = 4;</code>
-     */
-    public java.lang.String getPostalCode() {
-      java.lang.Object ref = postalCode_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          postalCode_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string PostalCode = 4;</code>
-     */
-    public com.google.protobuf.ByteString
-        getPostalCodeBytes() {
-      java.lang.Object ref = postalCode_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        postalCode_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // required string Country = 5;
-    public static final int COUNTRY_FIELD_NUMBER = 5;
-    private java.lang.Object country_;
-    /**
-     * <code>required string Country = 5;</code>
-     */
-    public boolean hasCountry() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>required string Country = 5;</code>
+     * <code>required string country = 4;</code>
      */
     public java.lang.String getCountry() {
       java.lang.Object ref = country_;
@@ -3694,7 +1834,7 @@ public final class Output {
       }
     }
     /**
-     * <code>required string Country = 5;</code>
+     * <code>required string country = 4;</code>
      */
     public com.google.protobuf.ByteString
         getCountryBytes() {
@@ -3710,62 +1850,38 @@ public final class Output {
       }
     }
 
-    // optional string CustomerID = 6;
-    public static final int CUSTOMERID_FIELD_NUMBER = 6;
-    private java.lang.Object customerID_;
+    // required .bcml_converter.Shipto.CarEnum car = 5;
+    public static final int CAR_FIELD_NUMBER = 5;
+    private bcml_converter.Output.Shipto.CarEnum car_;
     /**
-     * <code>optional string CustomerID = 6;</code>
+     * <code>required .bcml_converter.Shipto.CarEnum car = 5;</code>
      */
-    public boolean hasCustomerID() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
+    public boolean hasCar() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>optional string CustomerID = 6;</code>
+     * <code>required .bcml_converter.Shipto.CarEnum car = 5;</code>
      */
-    public java.lang.String getCustomerID() {
-      java.lang.Object ref = customerID_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          customerID_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>optional string CustomerID = 6;</code>
-     */
-    public com.google.protobuf.ByteString
-        getCustomerIDBytes() {
-      java.lang.Object ref = customerID_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        customerID_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public bcml_converter.Output.Shipto.CarEnum getCar() {
+      return car_;
     }
 
     private void initFields() {
+      name_ = "";
       address_ = "";
       city_ = "";
-      region_ = "";
-      postalCode_ = "";
       country_ = "";
-      customerID_ = "";
+      car_ = bcml_converter.Output.Shipto.CarEnum.Audi;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
+      if (!hasName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       if (!hasAddress()) {
         memoizedIsInitialized = 0;
         return false;
@@ -3774,15 +1890,11 @@ public final class Output {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasRegion()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasPostalCode()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       if (!hasCountry()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasCar()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -3794,22 +1906,19 @@ public final class Output {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getAddressBytes());
+        output.writeBytes(1, getNameBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getCityBytes());
+        output.writeBytes(2, getAddressBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getRegionBytes());
+        output.writeBytes(3, getCityBytes());
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeBytes(4, getPostalCodeBytes());
+        output.writeBytes(4, getCountryBytes());
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeBytes(5, getCountryBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeBytes(6, getCustomerIDBytes());
+        output.writeEnum(5, car_.getNumber());
       }
       getUnknownFields().writeTo(output);
     }
@@ -3822,27 +1931,23 @@ public final class Output {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getAddressBytes());
+          .computeBytesSize(1, getNameBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getCityBytes());
+          .computeBytesSize(2, getAddressBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getRegionBytes());
+          .computeBytesSize(3, getCityBytes());
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(4, getPostalCodeBytes());
+          .computeBytesSize(4, getCountryBytes());
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(5, getCountryBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(6, getCustomerIDBytes());
+          .computeEnumSize(5, car_.getNumber());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -3856,53 +1961,53 @@ public final class Output {
       return super.writeReplace();
     }
 
-    public static bcml_converter.Output.Address parseFrom(
+    public static bcml_converter.Output.Shipto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static bcml_converter.Output.Address parseFrom(
+    public static bcml_converter.Output.Shipto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static bcml_converter.Output.Address parseFrom(byte[] data)
+    public static bcml_converter.Output.Shipto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static bcml_converter.Output.Address parseFrom(
+    public static bcml_converter.Output.Shipto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static bcml_converter.Output.Address parseFrom(java.io.InputStream input)
+    public static bcml_converter.Output.Shipto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static bcml_converter.Output.Address parseFrom(
+    public static bcml_converter.Output.Shipto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static bcml_converter.Output.Address parseDelimitedFrom(java.io.InputStream input)
+    public static bcml_converter.Output.Shipto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static bcml_converter.Output.Address parseDelimitedFrom(
+    public static bcml_converter.Output.Shipto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static bcml_converter.Output.Address parseFrom(
+    public static bcml_converter.Output.Shipto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static bcml_converter.Output.Address parseFrom(
+    public static bcml_converter.Output.Shipto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3911,7 +2016,7 @@ public final class Output {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(bcml_converter.Output.Address prototype) {
+    public static Builder newBuilder(bcml_converter.Output.Shipto prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -3923,24 +2028,24 @@ public final class Output {
       return builder;
     }
     /**
-     * Protobuf type {@code Address}
+     * Protobuf type {@code bcml_converter.Shipto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements bcml_converter.Output.AddressOrBuilder {
+       implements bcml_converter.Output.ShiptoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return bcml_converter.Output.internal_static_Address_descriptor;
+        return bcml_converter.Output.internal_static_bcml_converter_Shipto_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return bcml_converter.Output.internal_static_Address_fieldAccessorTable
+        return bcml_converter.Output.internal_static_bcml_converter_Shipto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                bcml_converter.Output.Address.class, bcml_converter.Output.Address.Builder.class);
+                bcml_converter.Output.Shipto.class, bcml_converter.Output.Shipto.Builder.class);
       }
 
-      // Construct using bcml_converter.Output.Address.newBuilder()
+      // Construct using bcml_converter.Output.Shipto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3960,18 +2065,16 @@ public final class Output {
 
       public Builder clear() {
         super.clear();
-        address_ = "";
+        name_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        city_ = "";
+        address_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        region_ = "";
+        city_ = "";
         bitField0_ = (bitField0_ & ~0x00000004);
-        postalCode_ = "";
-        bitField0_ = (bitField0_ & ~0x00000008);
         country_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
+        car_ = bcml_converter.Output.Shipto.CarEnum.Audi;
         bitField0_ = (bitField0_ & ~0x00000010);
-        customerID_ = "";
-        bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
 
@@ -3981,100 +2084,93 @@ public final class Output {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return bcml_converter.Output.internal_static_Address_descriptor;
+        return bcml_converter.Output.internal_static_bcml_converter_Shipto_descriptor;
       }
 
-      public bcml_converter.Output.Address getDefaultInstanceForType() {
-        return bcml_converter.Output.Address.getDefaultInstance();
+      public bcml_converter.Output.Shipto getDefaultInstanceForType() {
+        return bcml_converter.Output.Shipto.getDefaultInstance();
       }
 
-      public bcml_converter.Output.Address build() {
-        bcml_converter.Output.Address result = buildPartial();
+      public bcml_converter.Output.Shipto build() {
+        bcml_converter.Output.Shipto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public bcml_converter.Output.Address buildPartial() {
-        bcml_converter.Output.Address result = new bcml_converter.Output.Address(this);
+      public bcml_converter.Output.Shipto buildPartial() {
+        bcml_converter.Output.Shipto result = new bcml_converter.Output.Shipto(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.address_ = address_;
+        result.name_ = name_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.city_ = city_;
+        result.address_ = address_;
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.region_ = region_;
+        result.city_ = city_;
         if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
           to_bitField0_ |= 0x00000008;
         }
-        result.postalCode_ = postalCode_;
+        result.country_ = country_;
         if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
           to_bitField0_ |= 0x00000010;
         }
-        result.country_ = country_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.customerID_ = customerID_;
+        result.car_ = car_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof bcml_converter.Output.Address) {
-          return mergeFrom((bcml_converter.Output.Address)other);
+        if (other instanceof bcml_converter.Output.Shipto) {
+          return mergeFrom((bcml_converter.Output.Shipto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(bcml_converter.Output.Address other) {
-        if (other == bcml_converter.Output.Address.getDefaultInstance()) return this;
-        if (other.hasAddress()) {
+      public Builder mergeFrom(bcml_converter.Output.Shipto other) {
+        if (other == bcml_converter.Output.Shipto.getDefaultInstance()) return this;
+        if (other.hasName()) {
           bitField0_ |= 0x00000001;
+          name_ = other.name_;
+          onChanged();
+        }
+        if (other.hasAddress()) {
+          bitField0_ |= 0x00000002;
           address_ = other.address_;
           onChanged();
         }
         if (other.hasCity()) {
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000004;
           city_ = other.city_;
           onChanged();
         }
-        if (other.hasRegion()) {
-          bitField0_ |= 0x00000004;
-          region_ = other.region_;
-          onChanged();
-        }
-        if (other.hasPostalCode()) {
-          bitField0_ |= 0x00000008;
-          postalCode_ = other.postalCode_;
-          onChanged();
-        }
         if (other.hasCountry()) {
-          bitField0_ |= 0x00000010;
+          bitField0_ |= 0x00000008;
           country_ = other.country_;
           onChanged();
         }
-        if (other.hasCustomerID()) {
-          bitField0_ |= 0x00000020;
-          customerID_ = other.customerID_;
-          onChanged();
+        if (other.hasCar()) {
+          setCar(other.getCar());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
+        if (!hasName()) {
+          
+          return false;
+        }
         if (!hasAddress()) {
           
           return false;
@@ -4083,15 +2179,11 @@ public final class Output {
           
           return false;
         }
-        if (!hasRegion()) {
-          
-          return false;
-        }
-        if (!hasPostalCode()) {
-          
-          return false;
-        }
         if (!hasCountry()) {
+          
+          return false;
+        }
+        if (!hasCar()) {
           
           return false;
         }
@@ -4102,11 +2194,11 @@ public final class Output {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        bcml_converter.Output.Address parsedMessage = null;
+        bcml_converter.Output.Shipto parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (bcml_converter.Output.Address) e.getUnfinishedMessage();
+          parsedMessage = (bcml_converter.Output.Shipto) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -4117,16 +2209,90 @@ public final class Output {
       }
       private int bitField0_;
 
-      // required string Address = 1;
-      private java.lang.Object address_ = "";
+      // required string name = 1;
+      private java.lang.Object name_ = "";
       /**
-       * <code>required string Address = 1;</code>
+       * <code>required string name = 1;</code>
        */
-      public boolean hasAddress() {
+      public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required string Address = 1;</code>
+       * <code>required string name = 1;</code>
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          name_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string name = 1;</code>
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string name = 1;</code>
+       */
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string name = 1;</code>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required string address = 2;
+      private java.lang.Object address_ = "";
+      /**
+       * <code>required string address = 2;</code>
+       */
+      public boolean hasAddress() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string address = 2;</code>
        */
       public java.lang.String getAddress() {
         java.lang.Object ref = address_;
@@ -4140,7 +2306,7 @@ public final class Output {
         }
       }
       /**
-       * <code>required string Address = 1;</code>
+       * <code>required string address = 2;</code>
        */
       public com.google.protobuf.ByteString
           getAddressBytes() {
@@ -4156,51 +2322,51 @@ public final class Output {
         }
       }
       /**
-       * <code>required string Address = 1;</code>
+       * <code>required string address = 2;</code>
        */
       public Builder setAddress(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000001;
+  bitField0_ |= 0x00000002;
         address_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string Address = 1;</code>
+       * <code>required string address = 2;</code>
        */
       public Builder clearAddress() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         address_ = getDefaultInstance().getAddress();
         onChanged();
         return this;
       }
       /**
-       * <code>required string Address = 1;</code>
+       * <code>required string address = 2;</code>
        */
       public Builder setAddressBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000001;
+  bitField0_ |= 0x00000002;
         address_ = value;
         onChanged();
         return this;
       }
 
-      // required string City = 2;
+      // required string city = 3;
       private java.lang.Object city_ = "";
       /**
-       * <code>required string City = 2;</code>
+       * <code>required string city = 3;</code>
        */
       public boolean hasCity() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+        return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required string City = 2;</code>
+       * <code>required string city = 3;</code>
        */
       public java.lang.String getCity() {
         java.lang.Object ref = city_;
@@ -4214,7 +2380,7 @@ public final class Output {
         }
       }
       /**
-       * <code>required string City = 2;</code>
+       * <code>required string city = 3;</code>
        */
       public com.google.protobuf.ByteString
           getCityBytes() {
@@ -4230,199 +2396,51 @@ public final class Output {
         }
       }
       /**
-       * <code>required string City = 2;</code>
+       * <code>required string city = 3;</code>
        */
       public Builder setCity(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  bitField0_ |= 0x00000004;
         city_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string City = 2;</code>
+       * <code>required string city = 3;</code>
        */
       public Builder clearCity() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000004);
         city_ = getDefaultInstance().getCity();
         onChanged();
         return this;
       }
       /**
-       * <code>required string City = 2;</code>
+       * <code>required string city = 3;</code>
        */
       public Builder setCityBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  bitField0_ |= 0x00000004;
         city_ = value;
         onChanged();
         return this;
       }
 
-      // required string Region = 3;
-      private java.lang.Object region_ = "";
+      // required string country = 4;
+      private java.lang.Object country_ = "";
       /**
-       * <code>required string Region = 3;</code>
+       * <code>required string country = 4;</code>
        */
-      public boolean hasRegion() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>required string Region = 3;</code>
-       */
-      public java.lang.String getRegion() {
-        java.lang.Object ref = region_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          region_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string Region = 3;</code>
-       */
-      public com.google.protobuf.ByteString
-          getRegionBytes() {
-        java.lang.Object ref = region_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          region_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string Region = 3;</code>
-       */
-      public Builder setRegion(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        region_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string Region = 3;</code>
-       */
-      public Builder clearRegion() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        region_ = getDefaultInstance().getRegion();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string Region = 3;</code>
-       */
-      public Builder setRegionBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        region_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required string PostalCode = 4;
-      private java.lang.Object postalCode_ = "";
-      /**
-       * <code>required string PostalCode = 4;</code>
-       */
-      public boolean hasPostalCode() {
+      public boolean hasCountry() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required string PostalCode = 4;</code>
-       */
-      public java.lang.String getPostalCode() {
-        java.lang.Object ref = postalCode_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          postalCode_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string PostalCode = 4;</code>
-       */
-      public com.google.protobuf.ByteString
-          getPostalCodeBytes() {
-        java.lang.Object ref = postalCode_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          postalCode_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string PostalCode = 4;</code>
-       */
-      public Builder setPostalCode(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        postalCode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string PostalCode = 4;</code>
-       */
-      public Builder clearPostalCode() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        postalCode_ = getDefaultInstance().getPostalCode();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string PostalCode = 4;</code>
-       */
-      public Builder setPostalCodeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        postalCode_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required string Country = 5;
-      private java.lang.Object country_ = "";
-      /**
-       * <code>required string Country = 5;</code>
-       */
-      public boolean hasCountry() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>required string Country = 5;</code>
+       * <code>required string country = 4;</code>
        */
       public java.lang.String getCountry() {
         java.lang.Object ref = country_;
@@ -4436,7 +2454,7 @@ public final class Output {
         }
       }
       /**
-       * <code>required string Country = 5;</code>
+       * <code>required string country = 4;</code>
        */
       public com.google.protobuf.ByteString
           getCountryBytes() {
@@ -4452,252 +2470,179 @@ public final class Output {
         }
       }
       /**
-       * <code>required string Country = 5;</code>
+       * <code>required string country = 4;</code>
        */
       public Builder setCountry(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000010;
+  bitField0_ |= 0x00000008;
         country_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string Country = 5;</code>
+       * <code>required string country = 4;</code>
        */
       public Builder clearCountry() {
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000008);
         country_ = getDefaultInstance().getCountry();
         onChanged();
         return this;
       }
       /**
-       * <code>required string Country = 5;</code>
+       * <code>required string country = 4;</code>
        */
       public Builder setCountryBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000010;
+  bitField0_ |= 0x00000008;
         country_ = value;
         onChanged();
         return this;
       }
 
-      // optional string CustomerID = 6;
-      private java.lang.Object customerID_ = "";
+      // required .bcml_converter.Shipto.CarEnum car = 5;
+      private bcml_converter.Output.Shipto.CarEnum car_ = bcml_converter.Output.Shipto.CarEnum.Audi;
       /**
-       * <code>optional string CustomerID = 6;</code>
+       * <code>required .bcml_converter.Shipto.CarEnum car = 5;</code>
        */
-      public boolean hasCustomerID() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
+      public boolean hasCar() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>optional string CustomerID = 6;</code>
+       * <code>required .bcml_converter.Shipto.CarEnum car = 5;</code>
        */
-      public java.lang.String getCustomerID() {
-        java.lang.Object ref = customerID_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          customerID_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public bcml_converter.Output.Shipto.CarEnum getCar() {
+        return car_;
       }
       /**
-       * <code>optional string CustomerID = 6;</code>
+       * <code>required .bcml_converter.Shipto.CarEnum car = 5;</code>
        */
-      public com.google.protobuf.ByteString
-          getCustomerIDBytes() {
-        java.lang.Object ref = customerID_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          customerID_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string CustomerID = 6;</code>
-       */
-      public Builder setCustomerID(
-          java.lang.String value) {
+      public Builder setCar(bcml_converter.Output.Shipto.CarEnum value) {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000020;
-        customerID_ = value;
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000010;
+        car_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional string CustomerID = 6;</code>
+       * <code>required .bcml_converter.Shipto.CarEnum car = 5;</code>
        */
-      public Builder clearCustomerID() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        customerID_ = getDefaultInstance().getCustomerID();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string CustomerID = 6;</code>
-       */
-      public Builder setCustomerIDBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000020;
-        customerID_ = value;
+      public Builder clearCar() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        car_ = bcml_converter.Output.Shipto.CarEnum.Audi;
         onChanged();
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:Address)
+      // @@protoc_insertion_point(builder_scope:bcml_converter.Shipto)
     }
 
     static {
-      defaultInstance = new Address(true);
+      defaultInstance = new Shipto(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:Address)
+    // @@protoc_insertion_point(class_scope:bcml_converter.Shipto)
   }
 
-  public interface CustomerOrBuilder
+  public interface ShiporderOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required string CompanyName = 1;
+    // required string orderperson = 1;
     /**
-     * <code>required string CompanyName = 1;</code>
+     * <code>required string orderperson = 1;</code>
      */
-    boolean hasCompanyName();
+    boolean hasOrderperson();
     /**
-     * <code>required string CompanyName = 1;</code>
+     * <code>required string orderperson = 1;</code>
      */
-    java.lang.String getCompanyName();
+    java.lang.String getOrderperson();
     /**
-     * <code>required string CompanyName = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getCompanyNameBytes();
-
-    // required string ContactName = 2;
-    /**
-     * <code>required string ContactName = 2;</code>
-     */
-    boolean hasContactName();
-    /**
-     * <code>required string ContactName = 2;</code>
-     */
-    java.lang.String getContactName();
-    /**
-     * <code>required string ContactName = 2;</code>
+     * <code>required string orderperson = 1;</code>
      */
     com.google.protobuf.ByteString
-        getContactNameBytes();
+        getOrderpersonBytes();
 
-    // required string ContactTitle = 3;
+    // required .bcml_converter.Shipto shipto = 2;
     /**
-     * <code>required string ContactTitle = 3;</code>
+     * <code>required .bcml_converter.Shipto shipto = 2;</code>
      */
-    boolean hasContactTitle();
+    boolean hasShipto();
     /**
-     * <code>required string ContactTitle = 3;</code>
+     * <code>required .bcml_converter.Shipto shipto = 2;</code>
      */
-    java.lang.String getContactTitle();
+    bcml_converter.Output.Shipto getShipto();
     /**
-     * <code>required string ContactTitle = 3;</code>
+     * <code>required .bcml_converter.Shipto shipto = 2;</code>
+     */
+    bcml_converter.Output.ShiptoOrBuilder getShiptoOrBuilder();
+
+    // repeated .bcml_converter.Item item = 3;
+    /**
+     * <code>repeated .bcml_converter.Item item = 3;</code>
+     */
+    java.util.List<bcml_converter.Output.Item> 
+        getItemList();
+    /**
+     * <code>repeated .bcml_converter.Item item = 3;</code>
+     */
+    bcml_converter.Output.Item getItem(int index);
+    /**
+     * <code>repeated .bcml_converter.Item item = 3;</code>
+     */
+    int getItemCount();
+    /**
+     * <code>repeated .bcml_converter.Item item = 3;</code>
+     */
+    java.util.List<? extends bcml_converter.Output.ItemOrBuilder> 
+        getItemOrBuilderList();
+    /**
+     * <code>repeated .bcml_converter.Item item = 3;</code>
+     */
+    bcml_converter.Output.ItemOrBuilder getItemOrBuilder(
+        int index);
+
+    // required string orderid = 4;
+    /**
+     * <code>required string orderid = 4;</code>
+     */
+    boolean hasOrderid();
+    /**
+     * <code>required string orderid = 4;</code>
+     */
+    java.lang.String getOrderid();
+    /**
+     * <code>required string orderid = 4;</code>
      */
     com.google.protobuf.ByteString
-        getContactTitleBytes();
-
-    // required string Phone = 4;
-    /**
-     * <code>required string Phone = 4;</code>
-     */
-    boolean hasPhone();
-    /**
-     * <code>required string Phone = 4;</code>
-     */
-    java.lang.String getPhone();
-    /**
-     * <code>required string Phone = 4;</code>
-     */
-    com.google.protobuf.ByteString
-        getPhoneBytes();
-
-    // optional string Fax = 5;
-    /**
-     * <code>optional string Fax = 5;</code>
-     */
-    boolean hasFax();
-    /**
-     * <code>optional string Fax = 5;</code>
-     */
-    java.lang.String getFax();
-    /**
-     * <code>optional string Fax = 5;</code>
-     */
-    com.google.protobuf.ByteString
-        getFaxBytes();
-
-    // required .Address FullAddress = 6;
-    /**
-     * <code>required .Address FullAddress = 6;</code>
-     */
-    boolean hasFullAddress();
-    /**
-     * <code>required .Address FullAddress = 6;</code>
-     */
-    bcml_converter.Output.Address getFullAddress();
-    /**
-     * <code>required .Address FullAddress = 6;</code>
-     */
-    bcml_converter.Output.AddressOrBuilder getFullAddressOrBuilder();
-
-    // optional string CustomerID = 7;
-    /**
-     * <code>optional string CustomerID = 7;</code>
-     */
-    boolean hasCustomerID();
-    /**
-     * <code>optional string CustomerID = 7;</code>
-     */
-    java.lang.String getCustomerID();
-    /**
-     * <code>optional string CustomerID = 7;</code>
-     */
-    com.google.protobuf.ByteString
-        getCustomerIDBytes();
+        getOrderidBytes();
   }
   /**
-   * Protobuf type {@code Customer}
+   * Protobuf type {@code bcml_converter.Shiporder}
    */
-  public static final class Customer extends
+  public static final class Shiporder extends
       com.google.protobuf.GeneratedMessage
-      implements CustomerOrBuilder {
-    // Use Customer.newBuilder() to construct.
-    private Customer(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements ShiporderOrBuilder {
+    // Use Shiporder.newBuilder() to construct.
+    private Shiporder(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private Customer(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private Shiporder(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final Customer defaultInstance;
-    public static Customer getDefaultInstance() {
+    private static final Shiporder defaultInstance;
+    public static Shiporder getDefaultInstance() {
       return defaultInstance;
     }
 
-    public Customer getDefaultInstanceForType() {
+    public Shiporder getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -4707,7 +2652,7 @@ public final class Output {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private Customer(
+    private Shiporder(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4732,45 +2677,33 @@ public final class Output {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              companyName_ = input.readBytes();
+              orderperson_ = input.readBytes();
               break;
             }
             case 18: {
+              bcml_converter.Output.Shipto.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = shipto_.toBuilder();
+              }
+              shipto_ = input.readMessage(bcml_converter.Output.Shipto.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(shipto_);
+                shipto_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000002;
-              contactName_ = input.readBytes();
               break;
             }
             case 26: {
-              bitField0_ |= 0x00000004;
-              contactTitle_ = input.readBytes();
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                item_ = new java.util.ArrayList<bcml_converter.Output.Item>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              item_.add(input.readMessage(bcml_converter.Output.Item.PARSER, extensionRegistry));
               break;
             }
             case 34: {
-              bitField0_ |= 0x00000008;
-              phone_ = input.readBytes();
-              break;
-            }
-            case 42: {
-              bitField0_ |= 0x00000010;
-              fax_ = input.readBytes();
-              break;
-            }
-            case 50: {
-              bcml_converter.Output.Address.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000020) == 0x00000020)) {
-                subBuilder = fullAddress_.toBuilder();
-              }
-              fullAddress_ = input.readMessage(bcml_converter.Output.Address.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(fullAddress_);
-                fullAddress_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000020;
-              break;
-            }
-            case 58: {
-              bitField0_ |= 0x00000040;
-              customerID_ = input.readBytes();
+              bitField0_ |= 0x00000004;
+              orderid_ = input.readBytes();
               break;
             }
           }
@@ -4781,52 +2714,55 @@ public final class Output {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+          item_ = java.util.Collections.unmodifiableList(item_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return bcml_converter.Output.internal_static_Customer_descriptor;
+      return bcml_converter.Output.internal_static_bcml_converter_Shiporder_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return bcml_converter.Output.internal_static_Customer_fieldAccessorTable
+      return bcml_converter.Output.internal_static_bcml_converter_Shiporder_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              bcml_converter.Output.Customer.class, bcml_converter.Output.Customer.Builder.class);
+              bcml_converter.Output.Shiporder.class, bcml_converter.Output.Shiporder.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<Customer> PARSER =
-        new com.google.protobuf.AbstractParser<Customer>() {
-      public Customer parsePartialFrom(
+    public static com.google.protobuf.Parser<Shiporder> PARSER =
+        new com.google.protobuf.AbstractParser<Shiporder>() {
+      public Shiporder parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Customer(input, extensionRegistry);
+        return new Shiporder(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Customer> getParserForType() {
+    public com.google.protobuf.Parser<Shiporder> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
-    // required string CompanyName = 1;
-    public static final int COMPANYNAME_FIELD_NUMBER = 1;
-    private java.lang.Object companyName_;
+    // required string orderperson = 1;
+    public static final int ORDERPERSON_FIELD_NUMBER = 1;
+    private java.lang.Object orderperson_;
     /**
-     * <code>required string CompanyName = 1;</code>
+     * <code>required string orderperson = 1;</code>
      */
-    public boolean hasCompanyName() {
+    public boolean hasOrderperson() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string CompanyName = 1;</code>
+     * <code>required string orderperson = 1;</code>
      */
-    public java.lang.String getCompanyName() {
-      java.lang.Object ref = companyName_;
+    public java.lang.String getOrderperson() {
+      java.lang.Object ref = orderperson_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
@@ -4834,85 +2770,100 @@ public final class Output {
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
-          companyName_ = s;
+          orderperson_ = s;
         }
         return s;
       }
     }
     /**
-     * <code>required string CompanyName = 1;</code>
+     * <code>required string orderperson = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getCompanyNameBytes() {
-      java.lang.Object ref = companyName_;
+        getOrderpersonBytes() {
+      java.lang.Object ref = orderperson_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        companyName_ = b;
+        orderperson_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    // required string ContactName = 2;
-    public static final int CONTACTNAME_FIELD_NUMBER = 2;
-    private java.lang.Object contactName_;
+    // required .bcml_converter.Shipto shipto = 2;
+    public static final int SHIPTO_FIELD_NUMBER = 2;
+    private bcml_converter.Output.Shipto shipto_;
     /**
-     * <code>required string ContactName = 2;</code>
+     * <code>required .bcml_converter.Shipto shipto = 2;</code>
      */
-    public boolean hasContactName() {
+    public boolean hasShipto() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required string ContactName = 2;</code>
+     * <code>required .bcml_converter.Shipto shipto = 2;</code>
      */
-    public java.lang.String getContactName() {
-      java.lang.Object ref = contactName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          contactName_ = s;
-        }
-        return s;
-      }
+    public bcml_converter.Output.Shipto getShipto() {
+      return shipto_;
     }
     /**
-     * <code>required string ContactName = 2;</code>
+     * <code>required .bcml_converter.Shipto shipto = 2;</code>
      */
-    public com.google.protobuf.ByteString
-        getContactNameBytes() {
-      java.lang.Object ref = contactName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        contactName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public bcml_converter.Output.ShiptoOrBuilder getShiptoOrBuilder() {
+      return shipto_;
     }
 
-    // required string ContactTitle = 3;
-    public static final int CONTACTTITLE_FIELD_NUMBER = 3;
-    private java.lang.Object contactTitle_;
+    // repeated .bcml_converter.Item item = 3;
+    public static final int ITEM_FIELD_NUMBER = 3;
+    private java.util.List<bcml_converter.Output.Item> item_;
     /**
-     * <code>required string ContactTitle = 3;</code>
+     * <code>repeated .bcml_converter.Item item = 3;</code>
      */
-    public boolean hasContactTitle() {
+    public java.util.List<bcml_converter.Output.Item> getItemList() {
+      return item_;
+    }
+    /**
+     * <code>repeated .bcml_converter.Item item = 3;</code>
+     */
+    public java.util.List<? extends bcml_converter.Output.ItemOrBuilder> 
+        getItemOrBuilderList() {
+      return item_;
+    }
+    /**
+     * <code>repeated .bcml_converter.Item item = 3;</code>
+     */
+    public int getItemCount() {
+      return item_.size();
+    }
+    /**
+     * <code>repeated .bcml_converter.Item item = 3;</code>
+     */
+    public bcml_converter.Output.Item getItem(int index) {
+      return item_.get(index);
+    }
+    /**
+     * <code>repeated .bcml_converter.Item item = 3;</code>
+     */
+    public bcml_converter.Output.ItemOrBuilder getItemOrBuilder(
+        int index) {
+      return item_.get(index);
+    }
+
+    // required string orderid = 4;
+    public static final int ORDERID_FIELD_NUMBER = 4;
+    private java.lang.Object orderid_;
+    /**
+     * <code>required string orderid = 4;</code>
+     */
+    public boolean hasOrderid() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required string ContactTitle = 3;</code>
+     * <code>required string orderid = 4;</code>
      */
-    public java.lang.String getContactTitle() {
-      java.lang.Object ref = contactTitle_;
+    public java.lang.String getOrderid() {
+      java.lang.Object ref = orderid_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
@@ -4920,173 +2871,22 @@ public final class Output {
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
-          contactTitle_ = s;
+          orderid_ = s;
         }
         return s;
       }
     }
     /**
-     * <code>required string ContactTitle = 3;</code>
+     * <code>required string orderid = 4;</code>
      */
     public com.google.protobuf.ByteString
-        getContactTitleBytes() {
-      java.lang.Object ref = contactTitle_;
+        getOrderidBytes() {
+      java.lang.Object ref = orderid_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        contactTitle_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // required string Phone = 4;
-    public static final int PHONE_FIELD_NUMBER = 4;
-    private java.lang.Object phone_;
-    /**
-     * <code>required string Phone = 4;</code>
-     */
-    public boolean hasPhone() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>required string Phone = 4;</code>
-     */
-    public java.lang.String getPhone() {
-      java.lang.Object ref = phone_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          phone_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string Phone = 4;</code>
-     */
-    public com.google.protobuf.ByteString
-        getPhoneBytes() {
-      java.lang.Object ref = phone_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        phone_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // optional string Fax = 5;
-    public static final int FAX_FIELD_NUMBER = 5;
-    private java.lang.Object fax_;
-    /**
-     * <code>optional string Fax = 5;</code>
-     */
-    public boolean hasFax() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>optional string Fax = 5;</code>
-     */
-    public java.lang.String getFax() {
-      java.lang.Object ref = fax_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          fax_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>optional string Fax = 5;</code>
-     */
-    public com.google.protobuf.ByteString
-        getFaxBytes() {
-      java.lang.Object ref = fax_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        fax_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // required .Address FullAddress = 6;
-    public static final int FULLADDRESS_FIELD_NUMBER = 6;
-    private bcml_converter.Output.Address fullAddress_;
-    /**
-     * <code>required .Address FullAddress = 6;</code>
-     */
-    public boolean hasFullAddress() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    /**
-     * <code>required .Address FullAddress = 6;</code>
-     */
-    public bcml_converter.Output.Address getFullAddress() {
-      return fullAddress_;
-    }
-    /**
-     * <code>required .Address FullAddress = 6;</code>
-     */
-    public bcml_converter.Output.AddressOrBuilder getFullAddressOrBuilder() {
-      return fullAddress_;
-    }
-
-    // optional string CustomerID = 7;
-    public static final int CUSTOMERID_FIELD_NUMBER = 7;
-    private java.lang.Object customerID_;
-    /**
-     * <code>optional string CustomerID = 7;</code>
-     */
-    public boolean hasCustomerID() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
-    }
-    /**
-     * <code>optional string CustomerID = 7;</code>
-     */
-    public java.lang.String getCustomerID() {
-      java.lang.Object ref = customerID_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          customerID_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>optional string CustomerID = 7;</code>
-     */
-    public com.google.protobuf.ByteString
-        getCustomerIDBytes() {
-      java.lang.Object ref = customerID_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        customerID_ = b;
+        orderid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -5094,1150 +2894,34 @@ public final class Output {
     }
 
     private void initFields() {
-      companyName_ = "";
-      contactName_ = "";
-      contactTitle_ = "";
-      phone_ = "";
-      fax_ = "";
-      fullAddress_ = bcml_converter.Output.Address.getDefaultInstance();
-      customerID_ = "";
+      orderperson_ = "";
+      shipto_ = bcml_converter.Output.Shipto.getDefaultInstance();
+      item_ = java.util.Collections.emptyList();
+      orderid_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
-      if (!hasCompanyName()) {
+      if (!hasOrderperson()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasContactName()) {
+      if (!hasShipto()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasContactTitle()) {
+      if (!hasOrderid()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasPhone()) {
+      if (!getShipto().isInitialized()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasFullAddress()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getFullAddress().isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getCompanyNameBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getContactNameBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getContactTitleBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeBytes(4, getPhoneBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeBytes(5, getFaxBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeMessage(6, fullAddress_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeBytes(7, getCustomerIDBytes());
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getCompanyNameBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getContactNameBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getContactTitleBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(4, getPhoneBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(5, getFaxBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, fullAddress_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(7, getCustomerIDBytes());
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static bcml_converter.Output.Customer parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static bcml_converter.Output.Customer parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static bcml_converter.Output.Customer parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static bcml_converter.Output.Customer parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static bcml_converter.Output.Customer parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static bcml_converter.Output.Customer parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static bcml_converter.Output.Customer parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static bcml_converter.Output.Customer parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static bcml_converter.Output.Customer parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static bcml_converter.Output.Customer parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(bcml_converter.Output.Customer prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code Customer}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements bcml_converter.Output.CustomerOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return bcml_converter.Output.internal_static_Customer_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return bcml_converter.Output.internal_static_Customer_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                bcml_converter.Output.Customer.class, bcml_converter.Output.Customer.Builder.class);
-      }
-
-      // Construct using bcml_converter.Output.Customer.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getFullAddressFieldBuilder();
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-
-      public Builder clear() {
-        super.clear();
-        companyName_ = "";
-        bitField0_ = (bitField0_ & ~0x00000001);
-        contactName_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
-        contactTitle_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
-        phone_ = "";
-        bitField0_ = (bitField0_ & ~0x00000008);
-        fax_ = "";
-        bitField0_ = (bitField0_ & ~0x00000010);
-        if (fullAddressBuilder_ == null) {
-          fullAddress_ = bcml_converter.Output.Address.getDefaultInstance();
-        } else {
-          fullAddressBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000020);
-        customerID_ = "";
-        bitField0_ = (bitField0_ & ~0x00000040);
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return bcml_converter.Output.internal_static_Customer_descriptor;
-      }
-
-      public bcml_converter.Output.Customer getDefaultInstanceForType() {
-        return bcml_converter.Output.Customer.getDefaultInstance();
-      }
-
-      public bcml_converter.Output.Customer build() {
-        bcml_converter.Output.Customer result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public bcml_converter.Output.Customer buildPartial() {
-        bcml_converter.Output.Customer result = new bcml_converter.Output.Customer(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.companyName_ = companyName_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.contactName_ = contactName_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.contactTitle_ = contactTitle_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.phone_ = phone_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.fax_ = fax_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        if (fullAddressBuilder_ == null) {
-          result.fullAddress_ = fullAddress_;
-        } else {
-          result.fullAddress_ = fullAddressBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000040;
-        }
-        result.customerID_ = customerID_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof bcml_converter.Output.Customer) {
-          return mergeFrom((bcml_converter.Output.Customer)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(bcml_converter.Output.Customer other) {
-        if (other == bcml_converter.Output.Customer.getDefaultInstance()) return this;
-        if (other.hasCompanyName()) {
-          bitField0_ |= 0x00000001;
-          companyName_ = other.companyName_;
-          onChanged();
-        }
-        if (other.hasContactName()) {
-          bitField0_ |= 0x00000002;
-          contactName_ = other.contactName_;
-          onChanged();
-        }
-        if (other.hasContactTitle()) {
-          bitField0_ |= 0x00000004;
-          contactTitle_ = other.contactTitle_;
-          onChanged();
-        }
-        if (other.hasPhone()) {
-          bitField0_ |= 0x00000008;
-          phone_ = other.phone_;
-          onChanged();
-        }
-        if (other.hasFax()) {
-          bitField0_ |= 0x00000010;
-          fax_ = other.fax_;
-          onChanged();
-        }
-        if (other.hasFullAddress()) {
-          mergeFullAddress(other.getFullAddress());
-        }
-        if (other.hasCustomerID()) {
-          bitField0_ |= 0x00000040;
-          customerID_ = other.customerID_;
-          onChanged();
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        if (!hasCompanyName()) {
-          
-          return false;
-        }
-        if (!hasContactName()) {
-          
-          return false;
-        }
-        if (!hasContactTitle()) {
-          
-          return false;
-        }
-        if (!hasPhone()) {
-          
-          return false;
-        }
-        if (!hasFullAddress()) {
-          
-          return false;
-        }
-        if (!getFullAddress().isInitialized()) {
-          
-          return false;
-        }
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        bcml_converter.Output.Customer parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (bcml_converter.Output.Customer) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // required string CompanyName = 1;
-      private java.lang.Object companyName_ = "";
-      /**
-       * <code>required string CompanyName = 1;</code>
-       */
-      public boolean hasCompanyName() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required string CompanyName = 1;</code>
-       */
-      public java.lang.String getCompanyName() {
-        java.lang.Object ref = companyName_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          companyName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string CompanyName = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getCompanyNameBytes() {
-        java.lang.Object ref = companyName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          companyName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string CompanyName = 1;</code>
-       */
-      public Builder setCompanyName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        companyName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string CompanyName = 1;</code>
-       */
-      public Builder clearCompanyName() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        companyName_ = getDefaultInstance().getCompanyName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string CompanyName = 1;</code>
-       */
-      public Builder setCompanyNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        companyName_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required string ContactName = 2;
-      private java.lang.Object contactName_ = "";
-      /**
-       * <code>required string ContactName = 2;</code>
-       */
-      public boolean hasContactName() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required string ContactName = 2;</code>
-       */
-      public java.lang.String getContactName() {
-        java.lang.Object ref = contactName_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          contactName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string ContactName = 2;</code>
-       */
-      public com.google.protobuf.ByteString
-          getContactNameBytes() {
-        java.lang.Object ref = contactName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          contactName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string ContactName = 2;</code>
-       */
-      public Builder setContactName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        contactName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ContactName = 2;</code>
-       */
-      public Builder clearContactName() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        contactName_ = getDefaultInstance().getContactName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ContactName = 2;</code>
-       */
-      public Builder setContactNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        contactName_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required string ContactTitle = 3;
-      private java.lang.Object contactTitle_ = "";
-      /**
-       * <code>required string ContactTitle = 3;</code>
-       */
-      public boolean hasContactTitle() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>required string ContactTitle = 3;</code>
-       */
-      public java.lang.String getContactTitle() {
-        java.lang.Object ref = contactTitle_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          contactTitle_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string ContactTitle = 3;</code>
-       */
-      public com.google.protobuf.ByteString
-          getContactTitleBytes() {
-        java.lang.Object ref = contactTitle_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          contactTitle_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string ContactTitle = 3;</code>
-       */
-      public Builder setContactTitle(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        contactTitle_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ContactTitle = 3;</code>
-       */
-      public Builder clearContactTitle() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        contactTitle_ = getDefaultInstance().getContactTitle();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string ContactTitle = 3;</code>
-       */
-      public Builder setContactTitleBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        contactTitle_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required string Phone = 4;
-      private java.lang.Object phone_ = "";
-      /**
-       * <code>required string Phone = 4;</code>
-       */
-      public boolean hasPhone() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>required string Phone = 4;</code>
-       */
-      public java.lang.String getPhone() {
-        java.lang.Object ref = phone_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          phone_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string Phone = 4;</code>
-       */
-      public com.google.protobuf.ByteString
-          getPhoneBytes() {
-        java.lang.Object ref = phone_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          phone_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string Phone = 4;</code>
-       */
-      public Builder setPhone(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        phone_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string Phone = 4;</code>
-       */
-      public Builder clearPhone() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        phone_ = getDefaultInstance().getPhone();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string Phone = 4;</code>
-       */
-      public Builder setPhoneBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        phone_ = value;
-        onChanged();
-        return this;
-      }
-
-      // optional string Fax = 5;
-      private java.lang.Object fax_ = "";
-      /**
-       * <code>optional string Fax = 5;</code>
-       */
-      public boolean hasFax() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>optional string Fax = 5;</code>
-       */
-      public java.lang.String getFax() {
-        java.lang.Object ref = fax_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          fax_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>optional string Fax = 5;</code>
-       */
-      public com.google.protobuf.ByteString
-          getFaxBytes() {
-        java.lang.Object ref = fax_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          fax_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string Fax = 5;</code>
-       */
-      public Builder setFax(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-        fax_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string Fax = 5;</code>
-       */
-      public Builder clearFax() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        fax_ = getDefaultInstance().getFax();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string Fax = 5;</code>
-       */
-      public Builder setFaxBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-        fax_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required .Address FullAddress = 6;
-      private bcml_converter.Output.Address fullAddress_ = bcml_converter.Output.Address.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          bcml_converter.Output.Address, bcml_converter.Output.Address.Builder, bcml_converter.Output.AddressOrBuilder> fullAddressBuilder_;
-      /**
-       * <code>required .Address FullAddress = 6;</code>
-       */
-      public boolean hasFullAddress() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      /**
-       * <code>required .Address FullAddress = 6;</code>
-       */
-      public bcml_converter.Output.Address getFullAddress() {
-        if (fullAddressBuilder_ == null) {
-          return fullAddress_;
-        } else {
-          return fullAddressBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>required .Address FullAddress = 6;</code>
-       */
-      public Builder setFullAddress(bcml_converter.Output.Address value) {
-        if (fullAddressBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          fullAddress_ = value;
-          onChanged();
-        } else {
-          fullAddressBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000020;
-        return this;
-      }
-      /**
-       * <code>required .Address FullAddress = 6;</code>
-       */
-      public Builder setFullAddress(
-          bcml_converter.Output.Address.Builder builderForValue) {
-        if (fullAddressBuilder_ == null) {
-          fullAddress_ = builderForValue.build();
-          onChanged();
-        } else {
-          fullAddressBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000020;
-        return this;
-      }
-      /**
-       * <code>required .Address FullAddress = 6;</code>
-       */
-      public Builder mergeFullAddress(bcml_converter.Output.Address value) {
-        if (fullAddressBuilder_ == null) {
-          if (((bitField0_ & 0x00000020) == 0x00000020) &&
-              fullAddress_ != bcml_converter.Output.Address.getDefaultInstance()) {
-            fullAddress_ =
-              bcml_converter.Output.Address.newBuilder(fullAddress_).mergeFrom(value).buildPartial();
-          } else {
-            fullAddress_ = value;
-          }
-          onChanged();
-        } else {
-          fullAddressBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000020;
-        return this;
-      }
-      /**
-       * <code>required .Address FullAddress = 6;</code>
-       */
-      public Builder clearFullAddress() {
-        if (fullAddressBuilder_ == null) {
-          fullAddress_ = bcml_converter.Output.Address.getDefaultInstance();
-          onChanged();
-        } else {
-          fullAddressBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000020);
-        return this;
-      }
-      /**
-       * <code>required .Address FullAddress = 6;</code>
-       */
-      public bcml_converter.Output.Address.Builder getFullAddressBuilder() {
-        bitField0_ |= 0x00000020;
-        onChanged();
-        return getFullAddressFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>required .Address FullAddress = 6;</code>
-       */
-      public bcml_converter.Output.AddressOrBuilder getFullAddressOrBuilder() {
-        if (fullAddressBuilder_ != null) {
-          return fullAddressBuilder_.getMessageOrBuilder();
-        } else {
-          return fullAddress_;
-        }
-      }
-      /**
-       * <code>required .Address FullAddress = 6;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          bcml_converter.Output.Address, bcml_converter.Output.Address.Builder, bcml_converter.Output.AddressOrBuilder> 
-          getFullAddressFieldBuilder() {
-        if (fullAddressBuilder_ == null) {
-          fullAddressBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              bcml_converter.Output.Address, bcml_converter.Output.Address.Builder, bcml_converter.Output.AddressOrBuilder>(
-                  fullAddress_,
-                  getParentForChildren(),
-                  isClean());
-          fullAddress_ = null;
-        }
-        return fullAddressBuilder_;
-      }
-
-      // optional string CustomerID = 7;
-      private java.lang.Object customerID_ = "";
-      /**
-       * <code>optional string CustomerID = 7;</code>
-       */
-      public boolean hasCustomerID() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
-      }
-      /**
-       * <code>optional string CustomerID = 7;</code>
-       */
-      public java.lang.String getCustomerID() {
-        java.lang.Object ref = customerID_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          customerID_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>optional string CustomerID = 7;</code>
-       */
-      public com.google.protobuf.ByteString
-          getCustomerIDBytes() {
-        java.lang.Object ref = customerID_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          customerID_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string CustomerID = 7;</code>
-       */
-      public Builder setCustomerID(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000040;
-        customerID_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string CustomerID = 7;</code>
-       */
-      public Builder clearCustomerID() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        customerID_ = getDefaultInstance().getCustomerID();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string CustomerID = 7;</code>
-       */
-      public Builder setCustomerIDBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000040;
-        customerID_ = value;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:Customer)
-    }
-
-    static {
-      defaultInstance = new Customer(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:Customer)
-  }
-
-  public interface CustomersOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // repeated .Customer Customer = 1;
-    /**
-     * <code>repeated .Customer Customer = 1;</code>
-     */
-    java.util.List<bcml_converter.Output.Customer> 
-        getCustomerList();
-    /**
-     * <code>repeated .Customer Customer = 1;</code>
-     */
-    bcml_converter.Output.Customer getCustomer(int index);
-    /**
-     * <code>repeated .Customer Customer = 1;</code>
-     */
-    int getCustomerCount();
-    /**
-     * <code>repeated .Customer Customer = 1;</code>
-     */
-    java.util.List<? extends bcml_converter.Output.CustomerOrBuilder> 
-        getCustomerOrBuilderList();
-    /**
-     * <code>repeated .Customer Customer = 1;</code>
-     */
-    bcml_converter.Output.CustomerOrBuilder getCustomerOrBuilder(
-        int index);
-  }
-  /**
-   * Protobuf type {@code Customers}
-   */
-  public static final class Customers extends
-      com.google.protobuf.GeneratedMessage
-      implements CustomersOrBuilder {
-    // Use Customers.newBuilder() to construct.
-    private Customers(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private Customers(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final Customers defaultInstance;
-    public static Customers getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public Customers getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private Customers(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                customer_ = new java.util.ArrayList<bcml_converter.Output.Customer>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              customer_.add(input.readMessage(bcml_converter.Output.Customer.PARSER, extensionRegistry));
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-          customer_ = java.util.Collections.unmodifiableList(customer_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return bcml_converter.Output.internal_static_Customers_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return bcml_converter.Output.internal_static_Customers_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              bcml_converter.Output.Customers.class, bcml_converter.Output.Customers.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<Customers> PARSER =
-        new com.google.protobuf.AbstractParser<Customers>() {
-      public Customers parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Customers(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<Customers> getParserForType() {
-      return PARSER;
-    }
-
-    // repeated .Customer Customer = 1;
-    public static final int CUSTOMER_FIELD_NUMBER = 1;
-    private java.util.List<bcml_converter.Output.Customer> customer_;
-    /**
-     * <code>repeated .Customer Customer = 1;</code>
-     */
-    public java.util.List<bcml_converter.Output.Customer> getCustomerList() {
-      return customer_;
-    }
-    /**
-     * <code>repeated .Customer Customer = 1;</code>
-     */
-    public java.util.List<? extends bcml_converter.Output.CustomerOrBuilder> 
-        getCustomerOrBuilderList() {
-      return customer_;
-    }
-    /**
-     * <code>repeated .Customer Customer = 1;</code>
-     */
-    public int getCustomerCount() {
-      return customer_.size();
-    }
-    /**
-     * <code>repeated .Customer Customer = 1;</code>
-     */
-    public bcml_converter.Output.Customer getCustomer(int index) {
-      return customer_.get(index);
-    }
-    /**
-     * <code>repeated .Customer Customer = 1;</code>
-     */
-    public bcml_converter.Output.CustomerOrBuilder getCustomerOrBuilder(
-        int index) {
-      return customer_.get(index);
-    }
-
-    private void initFields() {
-      customer_ = java.util.Collections.emptyList();
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      for (int i = 0; i < getCustomerCount(); i++) {
-        if (!getCustomer(i).isInitialized()) {
+      for (int i = 0; i < getItemCount(); i++) {
+        if (!getItem(i).isInitialized()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -6249,8 +2933,17 @@ public final class Output {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < customer_.size(); i++) {
-        output.writeMessage(1, customer_.get(i));
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getOrderpersonBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, shipto_);
+      }
+      for (int i = 0; i < item_.size(); i++) {
+        output.writeMessage(3, item_.get(i));
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(4, getOrderidBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -6261,9 +2954,21 @@ public final class Output {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < customer_.size(); i++) {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, customer_.get(i));
+          .computeBytesSize(1, getOrderpersonBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, shipto_);
+      }
+      for (int i = 0; i < item_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, item_.get(i));
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(4, getOrderidBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -6277,53 +2982,53 @@ public final class Output {
       return super.writeReplace();
     }
 
-    public static bcml_converter.Output.Customers parseFrom(
+    public static bcml_converter.Output.Shiporder parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static bcml_converter.Output.Customers parseFrom(
+    public static bcml_converter.Output.Shiporder parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static bcml_converter.Output.Customers parseFrom(byte[] data)
+    public static bcml_converter.Output.Shiporder parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static bcml_converter.Output.Customers parseFrom(
+    public static bcml_converter.Output.Shiporder parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static bcml_converter.Output.Customers parseFrom(java.io.InputStream input)
+    public static bcml_converter.Output.Shiporder parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static bcml_converter.Output.Customers parseFrom(
+    public static bcml_converter.Output.Shiporder parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static bcml_converter.Output.Customers parseDelimitedFrom(java.io.InputStream input)
+    public static bcml_converter.Output.Shiporder parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static bcml_converter.Output.Customers parseDelimitedFrom(
+    public static bcml_converter.Output.Shiporder parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static bcml_converter.Output.Customers parseFrom(
+    public static bcml_converter.Output.Shiporder parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static bcml_converter.Output.Customers parseFrom(
+    public static bcml_converter.Output.Shiporder parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6332,7 +3037,7 @@ public final class Output {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(bcml_converter.Output.Customers prototype) {
+    public static Builder newBuilder(bcml_converter.Output.Shiporder prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -6344,24 +3049,24 @@ public final class Output {
       return builder;
     }
     /**
-     * Protobuf type {@code Customers}
+     * Protobuf type {@code bcml_converter.Shiporder}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements bcml_converter.Output.CustomersOrBuilder {
+       implements bcml_converter.Output.ShiporderOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return bcml_converter.Output.internal_static_Customers_descriptor;
+        return bcml_converter.Output.internal_static_bcml_converter_Shiporder_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return bcml_converter.Output.internal_static_Customers_fieldAccessorTable
+        return bcml_converter.Output.internal_static_bcml_converter_Shiporder_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                bcml_converter.Output.Customers.class, bcml_converter.Output.Customers.Builder.class);
+                bcml_converter.Output.Shiporder.class, bcml_converter.Output.Shiporder.Builder.class);
       }
 
-      // Construct using bcml_converter.Output.Customers.newBuilder()
+      // Construct using bcml_converter.Output.Shiporder.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6373,7 +3078,8 @@ public final class Output {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getCustomerFieldBuilder();
+          getShiptoFieldBuilder();
+          getItemFieldBuilder();
         }
       }
       private static Builder create() {
@@ -6382,12 +3088,22 @@ public final class Output {
 
       public Builder clear() {
         super.clear();
-        if (customerBuilder_ == null) {
-          customer_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+        orderperson_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (shiptoBuilder_ == null) {
+          shipto_ = bcml_converter.Output.Shipto.getDefaultInstance();
         } else {
-          customerBuilder_.clear();
+          shiptoBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (itemBuilder_ == null) {
+          item_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          itemBuilder_.clear();
+        }
+        orderid_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
 
@@ -6397,81 +3113,128 @@ public final class Output {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return bcml_converter.Output.internal_static_Customers_descriptor;
+        return bcml_converter.Output.internal_static_bcml_converter_Shiporder_descriptor;
       }
 
-      public bcml_converter.Output.Customers getDefaultInstanceForType() {
-        return bcml_converter.Output.Customers.getDefaultInstance();
+      public bcml_converter.Output.Shiporder getDefaultInstanceForType() {
+        return bcml_converter.Output.Shiporder.getDefaultInstance();
       }
 
-      public bcml_converter.Output.Customers build() {
-        bcml_converter.Output.Customers result = buildPartial();
+      public bcml_converter.Output.Shiporder build() {
+        bcml_converter.Output.Shiporder result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public bcml_converter.Output.Customers buildPartial() {
-        bcml_converter.Output.Customers result = new bcml_converter.Output.Customers(this);
+      public bcml_converter.Output.Shiporder buildPartial() {
+        bcml_converter.Output.Shiporder result = new bcml_converter.Output.Shiporder(this);
         int from_bitField0_ = bitField0_;
-        if (customerBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) == 0x00000001)) {
-            customer_ = java.util.Collections.unmodifiableList(customer_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.customer_ = customer_;
-        } else {
-          result.customer_ = customerBuilder_.build();
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
         }
+        result.orderperson_ = orderperson_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (shiptoBuilder_ == null) {
+          result.shipto_ = shipto_;
+        } else {
+          result.shipto_ = shiptoBuilder_.build();
+        }
+        if (itemBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004)) {
+            item_ = java.util.Collections.unmodifiableList(item_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.item_ = item_;
+        } else {
+          result.item_ = itemBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.orderid_ = orderid_;
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof bcml_converter.Output.Customers) {
-          return mergeFrom((bcml_converter.Output.Customers)other);
+        if (other instanceof bcml_converter.Output.Shiporder) {
+          return mergeFrom((bcml_converter.Output.Shiporder)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(bcml_converter.Output.Customers other) {
-        if (other == bcml_converter.Output.Customers.getDefaultInstance()) return this;
-        if (customerBuilder_ == null) {
-          if (!other.customer_.isEmpty()) {
-            if (customer_.isEmpty()) {
-              customer_ = other.customer_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+      public Builder mergeFrom(bcml_converter.Output.Shiporder other) {
+        if (other == bcml_converter.Output.Shiporder.getDefaultInstance()) return this;
+        if (other.hasOrderperson()) {
+          bitField0_ |= 0x00000001;
+          orderperson_ = other.orderperson_;
+          onChanged();
+        }
+        if (other.hasShipto()) {
+          mergeShipto(other.getShipto());
+        }
+        if (itemBuilder_ == null) {
+          if (!other.item_.isEmpty()) {
+            if (item_.isEmpty()) {
+              item_ = other.item_;
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
-              ensureCustomerIsMutable();
-              customer_.addAll(other.customer_);
+              ensureItemIsMutable();
+              item_.addAll(other.item_);
             }
             onChanged();
           }
         } else {
-          if (!other.customer_.isEmpty()) {
-            if (customerBuilder_.isEmpty()) {
-              customerBuilder_.dispose();
-              customerBuilder_ = null;
-              customer_ = other.customer_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              customerBuilder_ = 
+          if (!other.item_.isEmpty()) {
+            if (itemBuilder_.isEmpty()) {
+              itemBuilder_.dispose();
+              itemBuilder_ = null;
+              item_ = other.item_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              itemBuilder_ = 
                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getCustomerFieldBuilder() : null;
+                   getItemFieldBuilder() : null;
             } else {
-              customerBuilder_.addAllMessages(other.customer_);
+              itemBuilder_.addAllMessages(other.item_);
             }
           }
+        }
+        if (other.hasOrderid()) {
+          bitField0_ |= 0x00000008;
+          orderid_ = other.orderid_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        for (int i = 0; i < getCustomerCount(); i++) {
-          if (!getCustomer(i).isInitialized()) {
+        if (!hasOrderperson()) {
+          
+          return false;
+        }
+        if (!hasShipto()) {
+          
+          return false;
+        }
+        if (!hasOrderid()) {
+          
+          return false;
+        }
+        if (!getShipto().isInitialized()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getItemCount(); i++) {
+          if (!getItem(i).isInitialized()) {
             
             return false;
           }
@@ -6483,11 +3246,11 @@ public final class Output {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        bcml_converter.Output.Customers parsedMessage = null;
+        bcml_converter.Output.Shiporder parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (bcml_converter.Output.Customers) e.getUnfinishedMessage();
+          parsedMessage = (bcml_converter.Output.Shiporder) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -6498,1023 +3261,542 @@ public final class Output {
       }
       private int bitField0_;
 
-      // repeated .Customer Customer = 1;
-      private java.util.List<bcml_converter.Output.Customer> customer_ =
+      // required string orderperson = 1;
+      private java.lang.Object orderperson_ = "";
+      /**
+       * <code>required string orderperson = 1;</code>
+       */
+      public boolean hasOrderperson() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string orderperson = 1;</code>
+       */
+      public java.lang.String getOrderperson() {
+        java.lang.Object ref = orderperson_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          orderperson_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string orderperson = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getOrderpersonBytes() {
+        java.lang.Object ref = orderperson_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          orderperson_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string orderperson = 1;</code>
+       */
+      public Builder setOrderperson(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        orderperson_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string orderperson = 1;</code>
+       */
+      public Builder clearOrderperson() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        orderperson_ = getDefaultInstance().getOrderperson();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string orderperson = 1;</code>
+       */
+      public Builder setOrderpersonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        orderperson_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required .bcml_converter.Shipto shipto = 2;
+      private bcml_converter.Output.Shipto shipto_ = bcml_converter.Output.Shipto.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          bcml_converter.Output.Shipto, bcml_converter.Output.Shipto.Builder, bcml_converter.Output.ShiptoOrBuilder> shiptoBuilder_;
+      /**
+       * <code>required .bcml_converter.Shipto shipto = 2;</code>
+       */
+      public boolean hasShipto() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required .bcml_converter.Shipto shipto = 2;</code>
+       */
+      public bcml_converter.Output.Shipto getShipto() {
+        if (shiptoBuilder_ == null) {
+          return shipto_;
+        } else {
+          return shiptoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>required .bcml_converter.Shipto shipto = 2;</code>
+       */
+      public Builder setShipto(bcml_converter.Output.Shipto value) {
+        if (shiptoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          shipto_ = value;
+          onChanged();
+        } else {
+          shiptoBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>required .bcml_converter.Shipto shipto = 2;</code>
+       */
+      public Builder setShipto(
+          bcml_converter.Output.Shipto.Builder builderForValue) {
+        if (shiptoBuilder_ == null) {
+          shipto_ = builderForValue.build();
+          onChanged();
+        } else {
+          shiptoBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>required .bcml_converter.Shipto shipto = 2;</code>
+       */
+      public Builder mergeShipto(bcml_converter.Output.Shipto value) {
+        if (shiptoBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              shipto_ != bcml_converter.Output.Shipto.getDefaultInstance()) {
+            shipto_ =
+              bcml_converter.Output.Shipto.newBuilder(shipto_).mergeFrom(value).buildPartial();
+          } else {
+            shipto_ = value;
+          }
+          onChanged();
+        } else {
+          shiptoBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>required .bcml_converter.Shipto shipto = 2;</code>
+       */
+      public Builder clearShipto() {
+        if (shiptoBuilder_ == null) {
+          shipto_ = bcml_converter.Output.Shipto.getDefaultInstance();
+          onChanged();
+        } else {
+          shiptoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      /**
+       * <code>required .bcml_converter.Shipto shipto = 2;</code>
+       */
+      public bcml_converter.Output.Shipto.Builder getShiptoBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getShiptoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>required .bcml_converter.Shipto shipto = 2;</code>
+       */
+      public bcml_converter.Output.ShiptoOrBuilder getShiptoOrBuilder() {
+        if (shiptoBuilder_ != null) {
+          return shiptoBuilder_.getMessageOrBuilder();
+        } else {
+          return shipto_;
+        }
+      }
+      /**
+       * <code>required .bcml_converter.Shipto shipto = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          bcml_converter.Output.Shipto, bcml_converter.Output.Shipto.Builder, bcml_converter.Output.ShiptoOrBuilder> 
+          getShiptoFieldBuilder() {
+        if (shiptoBuilder_ == null) {
+          shiptoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              bcml_converter.Output.Shipto, bcml_converter.Output.Shipto.Builder, bcml_converter.Output.ShiptoOrBuilder>(
+                  shipto_,
+                  getParentForChildren(),
+                  isClean());
+          shipto_ = null;
+        }
+        return shiptoBuilder_;
+      }
+
+      // repeated .bcml_converter.Item item = 3;
+      private java.util.List<bcml_converter.Output.Item> item_ =
         java.util.Collections.emptyList();
-      private void ensureCustomerIsMutable() {
-        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          customer_ = new java.util.ArrayList<bcml_converter.Output.Customer>(customer_);
-          bitField0_ |= 0x00000001;
+      private void ensureItemIsMutable() {
+        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+          item_ = new java.util.ArrayList<bcml_converter.Output.Item>(item_);
+          bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          bcml_converter.Output.Customer, bcml_converter.Output.Customer.Builder, bcml_converter.Output.CustomerOrBuilder> customerBuilder_;
+          bcml_converter.Output.Item, bcml_converter.Output.Item.Builder, bcml_converter.Output.ItemOrBuilder> itemBuilder_;
 
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public java.util.List<bcml_converter.Output.Customer> getCustomerList() {
-        if (customerBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(customer_);
+      public java.util.List<bcml_converter.Output.Item> getItemList() {
+        if (itemBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(item_);
         } else {
-          return customerBuilder_.getMessageList();
+          return itemBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public int getCustomerCount() {
-        if (customerBuilder_ == null) {
-          return customer_.size();
+      public int getItemCount() {
+        if (itemBuilder_ == null) {
+          return item_.size();
         } else {
-          return customerBuilder_.getCount();
+          return itemBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public bcml_converter.Output.Customer getCustomer(int index) {
-        if (customerBuilder_ == null) {
-          return customer_.get(index);
+      public bcml_converter.Output.Item getItem(int index) {
+        if (itemBuilder_ == null) {
+          return item_.get(index);
         } else {
-          return customerBuilder_.getMessage(index);
+          return itemBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public Builder setCustomer(
-          int index, bcml_converter.Output.Customer value) {
-        if (customerBuilder_ == null) {
+      public Builder setItem(
+          int index, bcml_converter.Output.Item value) {
+        if (itemBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCustomerIsMutable();
-          customer_.set(index, value);
+          ensureItemIsMutable();
+          item_.set(index, value);
           onChanged();
         } else {
-          customerBuilder_.setMessage(index, value);
+          itemBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public Builder setCustomer(
-          int index, bcml_converter.Output.Customer.Builder builderForValue) {
-        if (customerBuilder_ == null) {
-          ensureCustomerIsMutable();
-          customer_.set(index, builderForValue.build());
+      public Builder setItem(
+          int index, bcml_converter.Output.Item.Builder builderForValue) {
+        if (itemBuilder_ == null) {
+          ensureItemIsMutable();
+          item_.set(index, builderForValue.build());
           onChanged();
         } else {
-          customerBuilder_.setMessage(index, builderForValue.build());
+          itemBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public Builder addCustomer(bcml_converter.Output.Customer value) {
-        if (customerBuilder_ == null) {
+      public Builder addItem(bcml_converter.Output.Item value) {
+        if (itemBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCustomerIsMutable();
-          customer_.add(value);
+          ensureItemIsMutable();
+          item_.add(value);
           onChanged();
         } else {
-          customerBuilder_.addMessage(value);
+          itemBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public Builder addCustomer(
-          int index, bcml_converter.Output.Customer value) {
-        if (customerBuilder_ == null) {
+      public Builder addItem(
+          int index, bcml_converter.Output.Item value) {
+        if (itemBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCustomerIsMutable();
-          customer_.add(index, value);
+          ensureItemIsMutable();
+          item_.add(index, value);
           onChanged();
         } else {
-          customerBuilder_.addMessage(index, value);
+          itemBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public Builder addCustomer(
-          bcml_converter.Output.Customer.Builder builderForValue) {
-        if (customerBuilder_ == null) {
-          ensureCustomerIsMutable();
-          customer_.add(builderForValue.build());
+      public Builder addItem(
+          bcml_converter.Output.Item.Builder builderForValue) {
+        if (itemBuilder_ == null) {
+          ensureItemIsMutable();
+          item_.add(builderForValue.build());
           onChanged();
         } else {
-          customerBuilder_.addMessage(builderForValue.build());
+          itemBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public Builder addCustomer(
-          int index, bcml_converter.Output.Customer.Builder builderForValue) {
-        if (customerBuilder_ == null) {
-          ensureCustomerIsMutable();
-          customer_.add(index, builderForValue.build());
+      public Builder addItem(
+          int index, bcml_converter.Output.Item.Builder builderForValue) {
+        if (itemBuilder_ == null) {
+          ensureItemIsMutable();
+          item_.add(index, builderForValue.build());
           onChanged();
         } else {
-          customerBuilder_.addMessage(index, builderForValue.build());
+          itemBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public Builder addAllCustomer(
-          java.lang.Iterable<? extends bcml_converter.Output.Customer> values) {
-        if (customerBuilder_ == null) {
-          ensureCustomerIsMutable();
-          super.addAll(values, customer_);
+      public Builder addAllItem(
+          java.lang.Iterable<? extends bcml_converter.Output.Item> values) {
+        if (itemBuilder_ == null) {
+          ensureItemIsMutable();
+          super.addAll(values, item_);
           onChanged();
         } else {
-          customerBuilder_.addAllMessages(values);
+          itemBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public Builder clearCustomer() {
-        if (customerBuilder_ == null) {
-          customer_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+      public Builder clearItem() {
+        if (itemBuilder_ == null) {
+          item_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
-          customerBuilder_.clear();
+          itemBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public Builder removeCustomer(int index) {
-        if (customerBuilder_ == null) {
-          ensureCustomerIsMutable();
-          customer_.remove(index);
+      public Builder removeItem(int index) {
+        if (itemBuilder_ == null) {
+          ensureItemIsMutable();
+          item_.remove(index);
           onChanged();
         } else {
-          customerBuilder_.remove(index);
+          itemBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public bcml_converter.Output.Customer.Builder getCustomerBuilder(
+      public bcml_converter.Output.Item.Builder getItemBuilder(
           int index) {
-        return getCustomerFieldBuilder().getBuilder(index);
+        return getItemFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public bcml_converter.Output.CustomerOrBuilder getCustomerOrBuilder(
+      public bcml_converter.Output.ItemOrBuilder getItemOrBuilder(
           int index) {
-        if (customerBuilder_ == null) {
-          return customer_.get(index);  } else {
-          return customerBuilder_.getMessageOrBuilder(index);
+        if (itemBuilder_ == null) {
+          return item_.get(index);  } else {
+          return itemBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public java.util.List<? extends bcml_converter.Output.CustomerOrBuilder> 
-           getCustomerOrBuilderList() {
-        if (customerBuilder_ != null) {
-          return customerBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends bcml_converter.Output.ItemOrBuilder> 
+           getItemOrBuilderList() {
+        if (itemBuilder_ != null) {
+          return itemBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(customer_);
+          return java.util.Collections.unmodifiableList(item_);
         }
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public bcml_converter.Output.Customer.Builder addCustomerBuilder() {
-        return getCustomerFieldBuilder().addBuilder(
-            bcml_converter.Output.Customer.getDefaultInstance());
+      public bcml_converter.Output.Item.Builder addItemBuilder() {
+        return getItemFieldBuilder().addBuilder(
+            bcml_converter.Output.Item.getDefaultInstance());
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public bcml_converter.Output.Customer.Builder addCustomerBuilder(
+      public bcml_converter.Output.Item.Builder addItemBuilder(
           int index) {
-        return getCustomerFieldBuilder().addBuilder(
-            index, bcml_converter.Output.Customer.getDefaultInstance());
+        return getItemFieldBuilder().addBuilder(
+            index, bcml_converter.Output.Item.getDefaultInstance());
       }
       /**
-       * <code>repeated .Customer Customer = 1;</code>
+       * <code>repeated .bcml_converter.Item item = 3;</code>
        */
-      public java.util.List<bcml_converter.Output.Customer.Builder> 
-           getCustomerBuilderList() {
-        return getCustomerFieldBuilder().getBuilderList();
+      public java.util.List<bcml_converter.Output.Item.Builder> 
+           getItemBuilderList() {
+        return getItemFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          bcml_converter.Output.Customer, bcml_converter.Output.Customer.Builder, bcml_converter.Output.CustomerOrBuilder> 
-          getCustomerFieldBuilder() {
-        if (customerBuilder_ == null) {
-          customerBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              bcml_converter.Output.Customer, bcml_converter.Output.Customer.Builder, bcml_converter.Output.CustomerOrBuilder>(
-                  customer_,
-                  ((bitField0_ & 0x00000001) == 0x00000001),
+          bcml_converter.Output.Item, bcml_converter.Output.Item.Builder, bcml_converter.Output.ItemOrBuilder> 
+          getItemFieldBuilder() {
+        if (itemBuilder_ == null) {
+          itemBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              bcml_converter.Output.Item, bcml_converter.Output.Item.Builder, bcml_converter.Output.ItemOrBuilder>(
+                  item_,
+                  ((bitField0_ & 0x00000004) == 0x00000004),
                   getParentForChildren(),
                   isClean());
-          customer_ = null;
+          item_ = null;
         }
-        return customerBuilder_;
+        return itemBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:Customers)
+      // required string orderid = 4;
+      private java.lang.Object orderid_ = "";
+      /**
+       * <code>required string orderid = 4;</code>
+       */
+      public boolean hasOrderid() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>required string orderid = 4;</code>
+       */
+      public java.lang.String getOrderid() {
+        java.lang.Object ref = orderid_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          orderid_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string orderid = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getOrderidBytes() {
+        java.lang.Object ref = orderid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          orderid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string orderid = 4;</code>
+       */
+      public Builder setOrderid(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        orderid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string orderid = 4;</code>
+       */
+      public Builder clearOrderid() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        orderid_ = getDefaultInstance().getOrderid();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string orderid = 4;</code>
+       */
+      public Builder setOrderidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        orderid_ = value;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:bcml_converter.Shiporder)
     }
 
     static {
-      defaultInstance = new Customers(true);
+      defaultInstance = new Shiporder(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:Customers)
-  }
-
-  public interface RootOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // required .Customers Customers = 1;
-    /**
-     * <code>required .Customers Customers = 1;</code>
-     */
-    boolean hasCustomers();
-    /**
-     * <code>required .Customers Customers = 1;</code>
-     */
-    bcml_converter.Output.Customers getCustomers();
-    /**
-     * <code>required .Customers Customers = 1;</code>
-     */
-    bcml_converter.Output.CustomersOrBuilder getCustomersOrBuilder();
-
-    // required .Orders Orders = 2;
-    /**
-     * <code>required .Orders Orders = 2;</code>
-     */
-    boolean hasOrders();
-    /**
-     * <code>required .Orders Orders = 2;</code>
-     */
-    bcml_converter.Output.Orders getOrders();
-    /**
-     * <code>required .Orders Orders = 2;</code>
-     */
-    bcml_converter.Output.OrdersOrBuilder getOrdersOrBuilder();
-  }
-  /**
-   * Protobuf type {@code Root}
-   */
-  public static final class Root extends
-      com.google.protobuf.GeneratedMessage
-      implements RootOrBuilder {
-    // Use Root.newBuilder() to construct.
-    private Root(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private Root(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final Root defaultInstance;
-    public static Root getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public Root getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private Root(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              bcml_converter.Output.Customers.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000001) == 0x00000001)) {
-                subBuilder = customers_.toBuilder();
-              }
-              customers_ = input.readMessage(bcml_converter.Output.Customers.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(customers_);
-                customers_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000001;
-              break;
-            }
-            case 18: {
-              bcml_converter.Output.Orders.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000002) == 0x00000002)) {
-                subBuilder = orders_.toBuilder();
-              }
-              orders_ = input.readMessage(bcml_converter.Output.Orders.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(orders_);
-                orders_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000002;
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return bcml_converter.Output.internal_static_Root_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return bcml_converter.Output.internal_static_Root_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              bcml_converter.Output.Root.class, bcml_converter.Output.Root.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<Root> PARSER =
-        new com.google.protobuf.AbstractParser<Root>() {
-      public Root parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Root(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<Root> getParserForType() {
-      return PARSER;
-    }
-
-    private int bitField0_;
-    // required .Customers Customers = 1;
-    public static final int CUSTOMERS_FIELD_NUMBER = 1;
-    private bcml_converter.Output.Customers customers_;
-    /**
-     * <code>required .Customers Customers = 1;</code>
-     */
-    public boolean hasCustomers() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required .Customers Customers = 1;</code>
-     */
-    public bcml_converter.Output.Customers getCustomers() {
-      return customers_;
-    }
-    /**
-     * <code>required .Customers Customers = 1;</code>
-     */
-    public bcml_converter.Output.CustomersOrBuilder getCustomersOrBuilder() {
-      return customers_;
-    }
-
-    // required .Orders Orders = 2;
-    public static final int ORDERS_FIELD_NUMBER = 2;
-    private bcml_converter.Output.Orders orders_;
-    /**
-     * <code>required .Orders Orders = 2;</code>
-     */
-    public boolean hasOrders() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>required .Orders Orders = 2;</code>
-     */
-    public bcml_converter.Output.Orders getOrders() {
-      return orders_;
-    }
-    /**
-     * <code>required .Orders Orders = 2;</code>
-     */
-    public bcml_converter.Output.OrdersOrBuilder getOrdersOrBuilder() {
-      return orders_;
-    }
-
-    private void initFields() {
-      customers_ = bcml_converter.Output.Customers.getDefaultInstance();
-      orders_ = bcml_converter.Output.Orders.getDefaultInstance();
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      if (!hasCustomers()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasOrders()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getCustomers().isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getOrders().isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(1, customers_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeMessage(2, orders_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, customers_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, orders_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static bcml_converter.Output.Root parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static bcml_converter.Output.Root parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static bcml_converter.Output.Root parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static bcml_converter.Output.Root parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static bcml_converter.Output.Root parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static bcml_converter.Output.Root parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static bcml_converter.Output.Root parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static bcml_converter.Output.Root parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static bcml_converter.Output.Root parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static bcml_converter.Output.Root parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(bcml_converter.Output.Root prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code Root}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements bcml_converter.Output.RootOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return bcml_converter.Output.internal_static_Root_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return bcml_converter.Output.internal_static_Root_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                bcml_converter.Output.Root.class, bcml_converter.Output.Root.Builder.class);
-      }
-
-      // Construct using bcml_converter.Output.Root.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getCustomersFieldBuilder();
-          getOrdersFieldBuilder();
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-
-      public Builder clear() {
-        super.clear();
-        if (customersBuilder_ == null) {
-          customers_ = bcml_converter.Output.Customers.getDefaultInstance();
-        } else {
-          customersBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        if (ordersBuilder_ == null) {
-          orders_ = bcml_converter.Output.Orders.getDefaultInstance();
-        } else {
-          ordersBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return bcml_converter.Output.internal_static_Root_descriptor;
-      }
-
-      public bcml_converter.Output.Root getDefaultInstanceForType() {
-        return bcml_converter.Output.Root.getDefaultInstance();
-      }
-
-      public bcml_converter.Output.Root build() {
-        bcml_converter.Output.Root result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public bcml_converter.Output.Root buildPartial() {
-        bcml_converter.Output.Root result = new bcml_converter.Output.Root(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        if (customersBuilder_ == null) {
-          result.customers_ = customers_;
-        } else {
-          result.customers_ = customersBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        if (ordersBuilder_ == null) {
-          result.orders_ = orders_;
-        } else {
-          result.orders_ = ordersBuilder_.build();
-        }
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof bcml_converter.Output.Root) {
-          return mergeFrom((bcml_converter.Output.Root)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(bcml_converter.Output.Root other) {
-        if (other == bcml_converter.Output.Root.getDefaultInstance()) return this;
-        if (other.hasCustomers()) {
-          mergeCustomers(other.getCustomers());
-        }
-        if (other.hasOrders()) {
-          mergeOrders(other.getOrders());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        if (!hasCustomers()) {
-          
-          return false;
-        }
-        if (!hasOrders()) {
-          
-          return false;
-        }
-        if (!getCustomers().isInitialized()) {
-          
-          return false;
-        }
-        if (!getOrders().isInitialized()) {
-          
-          return false;
-        }
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        bcml_converter.Output.Root parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (bcml_converter.Output.Root) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // required .Customers Customers = 1;
-      private bcml_converter.Output.Customers customers_ = bcml_converter.Output.Customers.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          bcml_converter.Output.Customers, bcml_converter.Output.Customers.Builder, bcml_converter.Output.CustomersOrBuilder> customersBuilder_;
-      /**
-       * <code>required .Customers Customers = 1;</code>
-       */
-      public boolean hasCustomers() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required .Customers Customers = 1;</code>
-       */
-      public bcml_converter.Output.Customers getCustomers() {
-        if (customersBuilder_ == null) {
-          return customers_;
-        } else {
-          return customersBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>required .Customers Customers = 1;</code>
-       */
-      public Builder setCustomers(bcml_converter.Output.Customers value) {
-        if (customersBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          customers_ = value;
-          onChanged();
-        } else {
-          customersBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000001;
-        return this;
-      }
-      /**
-       * <code>required .Customers Customers = 1;</code>
-       */
-      public Builder setCustomers(
-          bcml_converter.Output.Customers.Builder builderForValue) {
-        if (customersBuilder_ == null) {
-          customers_ = builderForValue.build();
-          onChanged();
-        } else {
-          customersBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000001;
-        return this;
-      }
-      /**
-       * <code>required .Customers Customers = 1;</code>
-       */
-      public Builder mergeCustomers(bcml_converter.Output.Customers value) {
-        if (customersBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              customers_ != bcml_converter.Output.Customers.getDefaultInstance()) {
-            customers_ =
-              bcml_converter.Output.Customers.newBuilder(customers_).mergeFrom(value).buildPartial();
-          } else {
-            customers_ = value;
-          }
-          onChanged();
-        } else {
-          customersBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000001;
-        return this;
-      }
-      /**
-       * <code>required .Customers Customers = 1;</code>
-       */
-      public Builder clearCustomers() {
-        if (customersBuilder_ == null) {
-          customers_ = bcml_converter.Output.Customers.getDefaultInstance();
-          onChanged();
-        } else {
-          customersBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        return this;
-      }
-      /**
-       * <code>required .Customers Customers = 1;</code>
-       */
-      public bcml_converter.Output.Customers.Builder getCustomersBuilder() {
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return getCustomersFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>required .Customers Customers = 1;</code>
-       */
-      public bcml_converter.Output.CustomersOrBuilder getCustomersOrBuilder() {
-        if (customersBuilder_ != null) {
-          return customersBuilder_.getMessageOrBuilder();
-        } else {
-          return customers_;
-        }
-      }
-      /**
-       * <code>required .Customers Customers = 1;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          bcml_converter.Output.Customers, bcml_converter.Output.Customers.Builder, bcml_converter.Output.CustomersOrBuilder> 
-          getCustomersFieldBuilder() {
-        if (customersBuilder_ == null) {
-          customersBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              bcml_converter.Output.Customers, bcml_converter.Output.Customers.Builder, bcml_converter.Output.CustomersOrBuilder>(
-                  customers_,
-                  getParentForChildren(),
-                  isClean());
-          customers_ = null;
-        }
-        return customersBuilder_;
-      }
-
-      // required .Orders Orders = 2;
-      private bcml_converter.Output.Orders orders_ = bcml_converter.Output.Orders.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          bcml_converter.Output.Orders, bcml_converter.Output.Orders.Builder, bcml_converter.Output.OrdersOrBuilder> ordersBuilder_;
-      /**
-       * <code>required .Orders Orders = 2;</code>
-       */
-      public boolean hasOrders() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required .Orders Orders = 2;</code>
-       */
-      public bcml_converter.Output.Orders getOrders() {
-        if (ordersBuilder_ == null) {
-          return orders_;
-        } else {
-          return ordersBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>required .Orders Orders = 2;</code>
-       */
-      public Builder setOrders(bcml_converter.Output.Orders value) {
-        if (ordersBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          orders_ = value;
-          onChanged();
-        } else {
-          ordersBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>required .Orders Orders = 2;</code>
-       */
-      public Builder setOrders(
-          bcml_converter.Output.Orders.Builder builderForValue) {
-        if (ordersBuilder_ == null) {
-          orders_ = builderForValue.build();
-          onChanged();
-        } else {
-          ordersBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>required .Orders Orders = 2;</code>
-       */
-      public Builder mergeOrders(bcml_converter.Output.Orders value) {
-        if (ordersBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              orders_ != bcml_converter.Output.Orders.getDefaultInstance()) {
-            orders_ =
-              bcml_converter.Output.Orders.newBuilder(orders_).mergeFrom(value).buildPartial();
-          } else {
-            orders_ = value;
-          }
-          onChanged();
-        } else {
-          ordersBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>required .Orders Orders = 2;</code>
-       */
-      public Builder clearOrders() {
-        if (ordersBuilder_ == null) {
-          orders_ = bcml_converter.Output.Orders.getDefaultInstance();
-          onChanged();
-        } else {
-          ordersBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        return this;
-      }
-      /**
-       * <code>required .Orders Orders = 2;</code>
-       */
-      public bcml_converter.Output.Orders.Builder getOrdersBuilder() {
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return getOrdersFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>required .Orders Orders = 2;</code>
-       */
-      public bcml_converter.Output.OrdersOrBuilder getOrdersOrBuilder() {
-        if (ordersBuilder_ != null) {
-          return ordersBuilder_.getMessageOrBuilder();
-        } else {
-          return orders_;
-        }
-      }
-      /**
-       * <code>required .Orders Orders = 2;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          bcml_converter.Output.Orders, bcml_converter.Output.Orders.Builder, bcml_converter.Output.OrdersOrBuilder> 
-          getOrdersFieldBuilder() {
-        if (ordersBuilder_ == null) {
-          ordersBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              bcml_converter.Output.Orders, bcml_converter.Output.Orders.Builder, bcml_converter.Output.OrdersOrBuilder>(
-                  orders_,
-                  getParentForChildren(),
-                  isClean());
-          orders_ = null;
-        }
-        return ordersBuilder_;
-      }
-
-      // @@protoc_insertion_point(builder_scope:Root)
-    }
-
-    static {
-      defaultInstance = new Root(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:Root)
+    // @@protoc_insertion_point(class_scope:bcml_converter.Shiporder)
   }
 
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_ShipInfo_descriptor;
+    internal_static_bcml_converter_UnspecifiedType_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_ShipInfo_fieldAccessorTable;
+      internal_static_bcml_converter_UnspecifiedType_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_Order_descriptor;
+    internal_static_bcml_converter_Item_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Order_fieldAccessorTable;
+      internal_static_bcml_converter_Item_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_Orders_descriptor;
+    internal_static_bcml_converter_Shipto_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Orders_fieldAccessorTable;
+      internal_static_bcml_converter_Shipto_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_Address_descriptor;
+    internal_static_bcml_converter_Shiporder_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Address_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_Customer_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Customer_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_Customers_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Customers_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_Root_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_Root_fieldAccessorTable;
+      internal_static_bcml_converter_Shiporder_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -7524,73 +3806,48 @@ public final class Output {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014output.proto\"\273\001\n\010ShipInfo\022\017\n\007ShipVia\030\001" +
-      " \002(\003\022\017\n\007Freight\030\002 \002(\001\022\020\n\010ShipName\030\003 \002(\t\022" +
-      "\023\n\013ShipAddress\030\004 \002(\t\022\020\n\010ShipCity\030\005 \002(\t\022\022" +
-      "\n\nShipRegion\030\006 \002(\t\022\026\n\016ShipPostalCode\030\007 \002" +
-      "(\t\022\023\n\013ShipCountry\030\010 \002(\t\022\023\n\013ShippedDate\030\t" +
-      " \001(\003\"u\n\005Order\022\022\n\nCustomerID\030\001 \002(\t\022\022\n\nEmp" +
-      "loyeeID\030\002 \002(\t\022\021\n\tOrderDate\030\003 \002(\003\022\024\n\014Requ" +
-      "iredDate\030\004 \002(\003\022\033\n\010ShipInfo\030\005 \002(\0132\t.ShipI" +
-      "nfo\"\037\n\006Orders\022\025\n\005Order\030\001 \003(\0132\006.Order\"q\n\007" +
-      "Address\022\017\n\007Address\030\001 \002(\t\022\014\n\004City\030\002 \002(\t\022\016",
-      "\n\006Region\030\003 \002(\t\022\022\n\nPostalCode\030\004 \002(\t\022\017\n\007Co" +
-      "untry\030\005 \002(\t\022\022\n\nCustomerID\030\006 \001(\t\"\231\001\n\010Cust" +
-      "omer\022\023\n\013CompanyName\030\001 \002(\t\022\023\n\013ContactName" +
-      "\030\002 \002(\t\022\024\n\014ContactTitle\030\003 \002(\t\022\r\n\005Phone\030\004 " +
-      "\002(\t\022\013\n\003Fax\030\005 \001(\t\022\035\n\013FullAddress\030\006 \002(\0132\010." +
-      "Address\022\022\n\nCustomerID\030\007 \001(\t\"(\n\tCustomers" +
-      "\022\033\n\010Customer\030\001 \003(\0132\t.Customer\">\n\004Root\022\035\n" +
-      "\tCustomers\030\001 \002(\0132\n.Customers\022\027\n\006Orders\030\002" +
-      " \002(\0132\007.OrdersB\020\n\016bcml_converter"
+      "\n\014output.proto\022\016bcml_converter\"9\n\017Unspec" +
+      "ifiedType\022\026\n\016baseObjectType\030\001 \002(\t\022\016\n\006obj" +
+      "ect\030\002 \002(\014\"D\n\004Item\022\r\n\005title\030\001 \002(\t\022\014\n\004note" +
+      "\030\002 \001(\t\022\020\n\010quantity\030\003 \002(\003\022\r\n\005price\030\004 \002(\001\"" +
+      "\233\001\n\006Shipto\022\014\n\004name\030\001 \002(\t\022\017\n\007address\030\002 \002(" +
+      "\t\022\014\n\004city\030\003 \002(\t\022\017\n\007country\030\004 \002(\t\022+\n\003car\030" +
+      "\005 \002(\0162\036.bcml_converter.Shipto.CarEnum\"&\n" +
+      "\007CarEnum\022\010\n\004Audi\020\001\022\007\n\003BMW\020\002\022\010\n\004Golf\020\003\"}\n" +
+      "\tShiporder\022\023\n\013orderperson\030\001 \002(\t\022&\n\006shipt" +
+      "o\030\002 \002(\0132\026.bcml_converter.Shipto\022\"\n\004item\030",
+      "\003 \003(\0132\024.bcml_converter.Item\022\017\n\007orderid\030\004" +
+      " \002(\t"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
         public com.google.protobuf.ExtensionRegistry assignDescriptors(
             com.google.protobuf.Descriptors.FileDescriptor root) {
           descriptor = root;
-          internal_static_ShipInfo_descriptor =
+          internal_static_bcml_converter_UnspecifiedType_descriptor =
             getDescriptor().getMessageTypes().get(0);
-          internal_static_ShipInfo_fieldAccessorTable = new
+          internal_static_bcml_converter_UnspecifiedType_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_ShipInfo_descriptor,
-              new java.lang.String[] { "ShipVia", "Freight", "ShipName", "ShipAddress", "ShipCity", "ShipRegion", "ShipPostalCode", "ShipCountry", "ShippedDate", });
-          internal_static_Order_descriptor =
+              internal_static_bcml_converter_UnspecifiedType_descriptor,
+              new java.lang.String[] { "BaseObjectType", "Object", });
+          internal_static_bcml_converter_Item_descriptor =
             getDescriptor().getMessageTypes().get(1);
-          internal_static_Order_fieldAccessorTable = new
+          internal_static_bcml_converter_Item_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_Order_descriptor,
-              new java.lang.String[] { "CustomerID", "EmployeeID", "OrderDate", "RequiredDate", "ShipInfo", });
-          internal_static_Orders_descriptor =
+              internal_static_bcml_converter_Item_descriptor,
+              new java.lang.String[] { "Title", "Note", "Quantity", "Price", });
+          internal_static_bcml_converter_Shipto_descriptor =
             getDescriptor().getMessageTypes().get(2);
-          internal_static_Orders_fieldAccessorTable = new
+          internal_static_bcml_converter_Shipto_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_Orders_descriptor,
-              new java.lang.String[] { "Order", });
-          internal_static_Address_descriptor =
+              internal_static_bcml_converter_Shipto_descriptor,
+              new java.lang.String[] { "Name", "Address", "City", "Country", "Car", });
+          internal_static_bcml_converter_Shiporder_descriptor =
             getDescriptor().getMessageTypes().get(3);
-          internal_static_Address_fieldAccessorTable = new
+          internal_static_bcml_converter_Shiporder_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_Address_descriptor,
-              new java.lang.String[] { "Address", "City", "Region", "PostalCode", "Country", "CustomerID", });
-          internal_static_Customer_descriptor =
-            getDescriptor().getMessageTypes().get(4);
-          internal_static_Customer_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_Customer_descriptor,
-              new java.lang.String[] { "CompanyName", "ContactName", "ContactTitle", "Phone", "Fax", "FullAddress", "CustomerID", });
-          internal_static_Customers_descriptor =
-            getDescriptor().getMessageTypes().get(5);
-          internal_static_Customers_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_Customers_descriptor,
-              new java.lang.String[] { "Customer", });
-          internal_static_Root_descriptor =
-            getDescriptor().getMessageTypes().get(6);
-          internal_static_Root_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_Root_descriptor,
-              new java.lang.String[] { "Customers", "Orders", });
+              internal_static_bcml_converter_Shiporder_descriptor,
+              new java.lang.String[] { "Orderperson", "Shipto", "Item", "Orderid", });
           return null;
         }
       };

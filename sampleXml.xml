@@ -1,35 +1,24 @@
-<Root>
-	<Customers>
-		<Customer>
-			<CompanyName>Great Lakes Food Market</CompanyName>
-			<ContactName>Howard Snyder</ContactName>
-			<ContactTitle>Marketing Manager</ContactTitle>
-			<Phone>7555</Phone>
-			<FullAddress>
-				<Address>Baker Blvd</Address>
-				<City>Eugene</City>
-				<Region>OR</Region>
-				<PostalCode>97403</PostalCode>
-				<Country>USA</Country>
-			</FullAddress>
-		</Customer>
-	</Customers>
-	<Orders>
-		<Order>
-			<CustomerID>GREAL</CustomerID>
-			<EmployeeID>6</EmployeeID>
-			<OrderDate>1997</OrderDate>
-			<RequiredDate>1997</RequiredDate>
-			<ShipInfo>
-				<ShipVia>2</ShipVia>
-				<Freight>3.35</Freight>
-				<ShipName>Great Lakes Food Market</ShipName>
-				<ShipAddress>Baker Blvd</ShipAddress>
-				<ShipCity>Eugene</ShipCity>
-				<ShipRegion>OR</ShipRegion>
-				<ShipPostalCode>97403</ShipPostalCode>
-				<ShipCountry>USA</ShipCountry>
-			</ShipInfo>
-		</Order>
-	</Orders>
-</Root>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Shiporder>
+  <orderid>889923</orderid>
+  <orderperson>John Smith</orderperson>
+  <shipto>
+    <name> Ola Nordmann</name>
+    <address>Langgt 23</address>
+    <city>4000 Stavanger</city>
+    <country>Norway</country>
+    <car>Audi</car>
+  </shipto>
+  <item>
+    <title>Empire Burlesque</title>
+    <note>Special Edition</note>
+    <quantity>1</quantity>
+    <price>10.90</price>
+  </item>
+  <item title="Hide your heart" note="Waaa">
+    <title>Hide your heart</title>
+    <quantity>1</quantity>
+    <price>9.90</price>
+  </item>
+</Shiporder>

@@ -33,5 +33,9 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/protostuff-api"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/protostuff-core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/protostuff-xml"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xsd2thrift"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
